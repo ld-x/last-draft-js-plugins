@@ -1,0 +1,37 @@
+.blockType {
+  box-sizing: border-box;
+  background: #181818;
+  color: #fff;
+  margin: 0;
+  border-radius: 13px;
+  cursor: pointer;
+  height: 26px;
+  width: 26px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.blockType svg {
+  transform: scale(0.7);
+}
+
+.spacer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 74px;
+  height: 8px;
+}
+
+.popup {
+  position: absolute;
+  left: 130px;
+  transform: translate(-50%);
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  display: flex;
+  margin-top: -70px;
+}
