@@ -1,11 +1,13 @@
 import React from 'react';
 import DraftOffsetKey from 'draft-js/lib/DraftOffsetKey';
+import InputModal from './InputModal'
 
-export default class Toolbar extends React.Component {
+export default class Sidebar extends React.Component {
 
   state = {
     position: {
       transform: 'scale(0)',
+      modalVisible: false
     }
   }
 
@@ -21,7 +23,6 @@ export default class Toolbar extends React.Component {
     const selection = editorState.getSelection();
     const currentContent = editorState.getCurrentContent();
     const currentBlock = currentContent.getBlockForKey(selection.getStartKey());
-    // TODO verify that always a key-0-0 exists
     const offsetKey = DraftOffsetKey.encode(currentBlock.getKey(), 0, 0);
     // Note: need to wait on tick to make sure the DOM node has been create by Draft.js
     setTimeout(() => {
@@ -31,7 +32,7 @@ export default class Toolbar extends React.Component {
       this.setState({
         position: {
           top: (top + window.scrollY),
-          left: editor.getBoundingClientRect().left - 40,
+          left: editor.getBoundingClientRect().left - 25,
           transform: 'scale(1)',
           transition: 'transform 0.15s cubic-bezier(.3,1.2,.2,1)',
         },
@@ -39,23 +40,34 @@ export default class Toolbar extends React.Component {
     }, 0);
   }
 
+  toggleModal = () => {
+    this.setState({ modalVisible: !this.state.modalVisible })
+  }
+
+
   render() {
-    const { theme, store } = this.props;
+    const { theme, store } = this.props
+    const { modalVisible } = this.state
+    console.log(this.props.structure)
     return (
       <div
-        className={theme.toolbarStyles.wrapper}
+        className={theme.sidebarStyles.wrapper}
         style={this.state.position}
       >
-        {this.props.structure.map((Component, index) => (
+      {modalVisible && <InputModal theme={theme} toggleModal={::this.toggleModal} />}
+      {
+        this.props.structure.map((Component, index) => (
           <Component
             key={index}
             getEditorState={store.getItem('getEditorState')}
             setEditorState={store.getItem('setEditorState')}
             theme={theme}
             store={store}
-          />
-        ))}
+            toggleModal={::this.toggleModal}
+            />
+        ))
+      }
       </div>
-    );
+    )
   }
 }

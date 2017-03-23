@@ -1,13 +1,14 @@
 import decorateComponentWithProps from 'decorate-component-with-props';
 import createStore from './utils/createStore';
-import Toolbar from './components/Toolbar';
+import Sidebar from './components/Sidebar';
 import DefaultBlockTypeSelect from './components/DefaultBlockTypeSelect';
 import buttonStyles from './buttonStyles.css';
 import blockTypeSelectStyles from './blockTypeSelectStyles.css';
-import toolbarStyles from './toolbarStyles.css';
+import sidebarStyles from './sidebarStyles.css';
+import modalStyles from './modalStyles.css';
 
 export default (config = {}) => {
-  const defaultTheme = { buttonStyles, blockTypeSelectStyles, toolbarStyles };
+  const defaultTheme = { buttonStyles, blockTypeSelectStyles, sidebarStyles, modalStyles };
 
   const store = createStore({
     isVisible: false,
@@ -20,7 +21,7 @@ export default (config = {}) => {
     ]
   } = config;
 
-  const toolbarProps = {
+  const sidebarProps = {
     store,
     structure,
     theme,
@@ -32,11 +33,11 @@ export default (config = {}) => {
       store.updateItem('setEditorState', setEditorState);
       store.updateItem('getEditorRef', getEditorRef);
     },
-    // Re-Render the toolbar on every change
+    // Re-Render the sidebar on every change
     onChange: (editorState) => {
       store.updateItem('editorState', editorState);
       return editorState;
     },
-    SideToolbar: decorateComponentWithProps(Toolbar, toolbarProps),
+    SideToolbar: decorateComponentWithProps(Sidebar, sidebarProps),
   };
 };

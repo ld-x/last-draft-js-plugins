@@ -9,16 +9,17 @@ import {
   OrderedListButton,
 } from 'draft-js-buttons';
 
-import {AddImageButton} from '../../../../draft-js-mega-buttons/src/'
+import {AddImageButton, AddEmbedButton} from '../../../../draft-js-mega-buttons/src/'
 
 import BlockTypeSelect from '../BlockTypeSelect';
 
-const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store }) => (
+const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, toggleModal }) => (
   <BlockTypeSelect
     getEditorState={getEditorState}
     setEditorState={setEditorState}
     theme={theme}
     store={store}
+    toggleModal={toggleModal}
     structure={[
       HeadlineOneButton,
       HeadlineTwoButton,
@@ -26,7 +27,8 @@ const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store }
       OrderedListButton,
       BlockquoteButton,
       CodeBlockButton,
-      AddImageButton
+      AddImageButton,
+      AddEmbedButton
     ]}
   />
 );

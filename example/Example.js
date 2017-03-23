@@ -131,7 +131,7 @@ export default class Final extends Component {
   render() {
     return (
       <div>
-        <div className='editor' onClick={this.focus}>
+        <div className='editor'>
           <Editor
             editorState={this.state.editorState}
             onChange={this.onChange}

@@ -4,13 +4,13 @@
 
 .button {
   background: #fbfbfb;
-  color: #888;
+  color: #404040;
   font-size: 18px;
   border: 0;
   padding-top: 5px;
   vertical-align: bottom;
-  height: 34px;
-  width: 36px;
+  height: 46px;
+  width: 46px;
 }
 
 .button svg {
