@@ -14,7 +14,7 @@
 }
 
 .button svg {
-  fill: #888;
+  fill: currentColor;
 }
 
 .button:hover, .button:focus {

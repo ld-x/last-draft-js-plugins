@@ -44,17 +44,22 @@ export default class Sidebar extends React.Component {
     this.setState({ modalVisible: !this.state.modalVisible })
   }
 
-
   render() {
     const { theme, store } = this.props
     const { modalVisible } = this.state
-    console.log(this.props.structure)
     return (
       <div
         className={theme.sidebarStyles.wrapper}
         style={this.state.position}
       >
-      {modalVisible && <InputModal theme={theme} toggleModal={::this.toggleModal} />}
+      {
+        modalVisible &&
+          <InputModal
+            getEditorState={store.getItem('getEditorState')}
+            setEditorState={store.getItem('setEditorState')}
+            theme={theme}
+            toggleModal={::this.toggleModal} />
+      }
       {
         this.props.structure.map((Component, index) => (
           <Component

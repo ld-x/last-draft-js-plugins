@@ -62,11 +62,6 @@ import { mentions, Entry, positionSuggestions} from './Mentions'
 const mentionPlugin = createMentionPlugin({ mentions, positionSuggestions })
 const { MentionSuggestions } = mentionPlugin
 
-/* Side Toolbar */
-import createSideToolbarPlugin from '../mega-plugins/draft-js-mega-sidebar/src/'
-const sideToolbarPlugin = createSideToolbarPlugin()
-const { SideToolbar } = sideToolbarPlugin
-
 /* Stickers */
 import createStickerPlugin from 'draft-js-sticker-plugin'
 import stickers from './Stickers'
@@ -80,11 +75,24 @@ import 'draft-js-undo-plugin/lib/plugin.css'
 const undoPlugin = createUndoPlugin()
 const { UndoButton, RedoButton } = undoPlugin
 
+
+/* ld-mega plugins */
+
+/* Side Toolbar */
+import createSideToolbarPlugin from '../mega-plugins/draft-js-mega-sidebar/src/'
+const sideToolbarPlugin = createSideToolbarPlugin()
+const { SideToolbar } = sideToolbarPlugin
+
+/* Embed plugin */
+import createEmbedPlugin from '../mega-plugins/draft-js-mega-embed/src/'
+const embedPlugin = createEmbedPlugin()
+
+
 /* init the plugins */
 const plugins = [
   dndPlugin, focusPlugin, alignmentPlugin, resizeablePlugin, imagePlugin,
   counterPlugin, emojiPlugin, hashtagPlugin, inlineToolbarPlugin, linkifyPlugin,
-  mentionPlugin, sideToolbarPlugin, stickerPlugin, undoPlugin
+  mentionPlugin, sideToolbarPlugin, stickerPlugin, undoPlugin, embedPlugin
 ]
 
 /* init the state, either from raw, html or text */

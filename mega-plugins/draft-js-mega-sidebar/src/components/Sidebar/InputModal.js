@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-//import insertDataBlock from '../../utils/insertDataBlock'
-//import getVideoUrl from './getVideoUrl'
-//import {audioUrlValid, resolveAudioUrl} from './getAudioUrl'
+import getVideoUrl from './Url/getVideoUrl'
+import {audioUrlValid, resolveAudioUrl} from './Url/getAudioUrl'
+import insertDataBlock from './insertDataBlock'
 
 export default class extends Component {
   constructor (props) {
@@ -26,14 +26,11 @@ export default class extends Component {
   }
 
   submitUrl (src) {
-    console.log('u submit')
-    return
-
     /* video */
     let videoSrc = getVideoUrl(src)
     if (videoSrc !== undefined) {
       const data = {src: videoSrc, type: 'embed'}
-      this.props.onChange(insertDataBlock(this.props.editorState, data))
+      this.props.setEditorState(insertDataBlock(this.props.getEditorState(), data, 'embed'))
       return
     }
 
@@ -41,7 +38,7 @@ export default class extends Component {
     if (audioUrlValid(src)) {
       resolveAudioUrl(src, (audioSrc) => {
         const data = {src: audioSrc, type: 'embed'}
-        this.props.onChange(insertDataBlock(this.props.editorState, data))
+        this.props.setEditorState(insertDataBlock(this.props.getEditorState(), data, 'embed'))
         return
       })
     }
