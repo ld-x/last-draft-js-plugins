@@ -1,13 +1,13 @@
 import React from 'react';
 import DraftOffsetKey from 'draft-js/lib/DraftOffsetKey';
-import InputModal from './InputModal'
 
 export default class Sidebar extends React.Component {
 
   state = {
     position: {
       transform: 'scale(0)',
-      modalVisible: false
+      modalVisible: false,
+      modal: null
     }
   }
 
@@ -40,19 +40,27 @@ export default class Sidebar extends React.Component {
     }, 0);
   }
 
-  toggleModal = () => {
-    this.setState({ modalVisible: !this.state.modalVisible })
+  toggleModal = (type) => {
+    const modal = this.props.getModalByType(type)
+    this.setState({ modal }, () => {
+      this.setState({ modalVisible: !this.state.modalVisible })
+    })
   }
 
   render() {
     const { theme, store } = this.props
+    const { modal } = this.state
+
+    let InputModal = modal
+
     const { modalVisible } = this.state
     return (
       <div
         className={theme.sidebarStyles.wrapper}
         style={this.state.position}
       >
-      {
+
+      { /* decide here which modal */
         modalVisible &&
           <InputModal
             getEditorState={store.getItem('getEditorState')}

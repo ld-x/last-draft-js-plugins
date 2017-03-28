@@ -6,6 +6,7 @@ import buttonStyles from './buttonStyles.css';
 import blockTypeSelectStyles from './blockTypeSelectStyles.css';
 import sidebarStyles from './sidebarStyles.css';
 import modalStyles from './modalStyles.css';
+import getModalByType from './components/getModalByType'
 
 export default (config = {}) => {
   const defaultTheme = { buttonStyles, blockTypeSelectStyles, sidebarStyles, modalStyles };
@@ -24,6 +25,7 @@ export default (config = {}) => {
   const sidebarProps = {
     store,
     structure,
+    getModalByType,
     theme,
   };
 

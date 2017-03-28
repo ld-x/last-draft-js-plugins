@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-export default ({ children }) => (
+export default ({ children }, type) => (
   class embedButton extends Component {
 
     onClick (e) {
       e.preventDefault()
-      this.props.toggleModal()
+      this.props.toggleModal(type)
     }
 
     preventBubblingUp = (event) => { event.preventDefault(); }

@@ -9,7 +9,11 @@ import {
   OrderedListButton,
 } from 'draft-js-buttons';
 
-import {AddImageButton, AddEmbedButton} from '../../../../draft-js-mega-buttons/src/'
+import {
+  AddImageButton,
+  AddEmbedButton,
+  AddGifButton
+} from '../../../../draft-js-mega-buttons/src/'
 
 import BlockTypeSelect from '../BlockTypeSelect';
 
@@ -28,7 +32,8 @@ const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, 
       BlockquoteButton,
       CodeBlockButton,
       AddImageButton,
-      AddEmbedButton
+      AddEmbedButton,
+      AddGifButton
     ]}
   />
 );
