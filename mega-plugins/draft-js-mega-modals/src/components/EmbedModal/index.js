@@ -22,7 +22,7 @@ export default class extends Component {
 
   setUrl (event) {
     this.submitUrl(this.state.url)
-    this.props.toggleModal()
+    this.props.closeModal()
   }
 
   submitUrl (src) {
@@ -51,7 +51,7 @@ export default class extends Component {
 
   onCancel (event) {
     event.preventDefault()
-    this.props.toggleModal()
+    this.props.closeModal()
   }
 
   onKeyDown (event) {
@@ -60,7 +60,7 @@ export default class extends Component {
       this.setUrl()
     } else if (event.key === 'Escape') {
       event.preventDefault()
-      this.props.toggleModal()
+      this.props.closeModal()
     }
   }
 

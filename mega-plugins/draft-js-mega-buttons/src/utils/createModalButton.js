@@ -5,7 +5,7 @@ export default ({ children }, type) => (
 
     onClick (e) {
       e.preventDefault()
-      this.props.toggleModal(type)
+      this.props.openModal(type)
     }
 
     preventBubblingUp = (event) => { event.preventDefault(); }

@@ -40,17 +40,20 @@ export default class Sidebar extends React.Component {
     }, 0);
   }
 
-  toggleModal = (type) => {
+  openModal = (type) => {
     const modal = this.props.getModalByType(type)
     this.setState({ modal }, () => {
-      this.setState({ modalVisible: !this.state.modalVisible })
+      this.setState({ modalVisible: true })
     })
+  }
+
+  closeModal = () => {
+    this.setState({ modalVisible: false })
   }
 
   render() {
     const { theme, store } = this.props
     const { modal } = this.state
-
     let InputModal = modal
 
     const { modalVisible } = this.state
@@ -59,14 +62,14 @@ export default class Sidebar extends React.Component {
         className={theme.sidebarStyles.wrapper}
         style={this.state.position}
       >
-
-      { /* decide here which modal */
+      {
         modalVisible &&
           <InputModal
             getEditorState={store.getItem('getEditorState')}
             setEditorState={store.getItem('setEditorState')}
             theme={theme}
-            toggleModal={::this.toggleModal} />
+            closeModal={::this.closeModal}
+            openModal={::this.openModal} />
       }
       {
         this.props.structure.map((Component, index) => (
@@ -76,8 +79,8 @@ export default class Sidebar extends React.Component {
             setEditorState={store.getItem('setEditorState')}
             theme={theme}
             store={store}
-            toggleModal={::this.toggleModal}
-            />
+            closeModal={::this.closeModal}
+            openModal={::this.openModal} />
         ))
       }
       </div>

@@ -17,13 +17,14 @@ import {
 
 import BlockTypeSelect from '../BlockTypeSelect';
 
-const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, toggleModal }) => (
+const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, openModal, closeModal }) => (
   <BlockTypeSelect
     getEditorState={getEditorState}
     setEditorState={setEditorState}
     theme={theme}
     store={store}
-    toggleModal={toggleModal}
+    openModal={openModal}
+    closeModal={closeModal}
     structure={[
       HeadlineOneButton,
       HeadlineTwoButton,

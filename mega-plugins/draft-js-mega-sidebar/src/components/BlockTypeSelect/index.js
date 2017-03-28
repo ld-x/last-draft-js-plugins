@@ -66,8 +66,8 @@ export default class BlockTypeSelect extends React.Component {
               getEditorState={getEditorState}
               setEditorState={setEditorState}
               theme={theme.buttonStyles}
-              toggleModal={::this.props.toggleModal}
-            />
+              closeModal={::this.props.closeModal}
+              openModal={::this.props.openModal} />
           ))}
         </div>
       </div>
