@@ -12,7 +12,8 @@ import {
 import {
   AddImageButton,
   AddEmbedButton,
-  AddGifButton
+  AddGifButton,
+  AddEmojiButton
 } from '../../../../draft-js-mega-buttons/src/'
 
 import BlockTypeSelect from '../BlockTypeSelect';
@@ -34,7 +35,8 @@ const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, 
       CodeBlockButton,
       AddImageButton,
       AddEmbedButton,
-      AddGifButton
+      AddGifButton,
+      AddEmojiButton
     ]}
   />
 );
