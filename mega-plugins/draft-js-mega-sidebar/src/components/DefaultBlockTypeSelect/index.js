@@ -1,15 +1,6 @@
 import React from 'react';
 
 import {
-  HeadlineOneButton,
-  HeadlineTwoButton,
-  BlockquoteButton,
-  CodeBlockButton,
-  UnorderedListButton,
-  OrderedListButton,
-} from 'draft-js-buttons';
-
-import {
   AddImageButton,
   AddEmbedButton,
   AddGifButton,
@@ -27,12 +18,6 @@ const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, 
     openModal={openModal}
     closeModal={closeModal}
     structure={[
-      HeadlineOneButton,
-      HeadlineTwoButton,
-      UnorderedListButton,
-      OrderedListButton,
-      BlockquoteButton,
-      CodeBlockButton,
       AddImageButton,
       AddEmbedButton,
       AddGifButton,

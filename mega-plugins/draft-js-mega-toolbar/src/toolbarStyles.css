@@ -1,0 +1,12 @@
+.toolbar {
+  left: 50%;
+  transform: translate(-50%) scale(0);
+  position: absolute;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+}

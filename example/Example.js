@@ -44,12 +44,6 @@ const decorator = composeDecorators(
 )
 const imagePlugin = createImagePlugin({ decorator })
 
-/* inline toolbar */
-import createInlineToolbarPlugin from 'draft-js-inline-toolbar-plugin'
-import 'draft-js-inline-toolbar-plugin/lib/plugin.css'
-const inlineToolbarPlugin = createInlineToolbarPlugin()
-const { InlineToolbar } = inlineToolbarPlugin
-
 /* Linkify */
 import createLinkifyPlugin from 'draft-js-linkify-plugin'
 import 'draft-js-linkify-plugin/lib/plugin.css'
@@ -62,13 +56,6 @@ import { mentions, Entry, positionSuggestions} from './Mentions'
 const mentionPlugin = createMentionPlugin({ mentions, positionSuggestions })
 const { MentionSuggestions } = mentionPlugin
 
-/* Stickers */
-import createStickerPlugin from 'draft-js-sticker-plugin'
-import stickers from './Stickers'
-import 'draft-js-sticker-plugin/lib/plugin.css'
-const stickerPlugin = createStickerPlugin({ stickers: stickers })
-const { StickerSelect } = stickerPlugin
-
 /* Undo Redo */
 import createUndoPlugin from 'draft-js-undo-plugin'
 import 'draft-js-undo-plugin/lib/plugin.css'
@@ -77,6 +64,11 @@ const { UndoButton, RedoButton } = undoPlugin
 
 
 /* ld-mega plugins */
+
+/* inline toolbar */
+import createInlineToolbarPlugin from '../mega-plugins/draft-js-mega-toolbar/src/'
+const inlineToolbarPlugin = createInlineToolbarPlugin()
+const { InlineToolbar } = inlineToolbarPlugin
 
 /* Side Toolbar */
 import createSideToolbarPlugin from '../mega-plugins/draft-js-mega-sidebar/src/'
@@ -92,7 +84,7 @@ const embedPlugin = createEmbedPlugin()
 const plugins = [
   dndPlugin, focusPlugin, alignmentPlugin, resizeablePlugin, imagePlugin,
   counterPlugin, emojiPlugin, hashtagPlugin, inlineToolbarPlugin, linkifyPlugin,
-  mentionPlugin, sideToolbarPlugin, stickerPlugin, undoPlugin, embedPlugin
+  mentionPlugin, sideToolbarPlugin, undoPlugin, embedPlugin
 ]
 
 /* init the state, either from raw, html or text */
@@ -161,7 +153,6 @@ export default class Final extends Component {
           <div><CharCounter limit={300} /> characters out of an allowed 300</div>
           <div><WordCounter limit={50} /> words out of an allowed 50</div>
 
-          <StickerSelect editor={this} />
           <UndoButton />
           <RedoButton />
         </div>
