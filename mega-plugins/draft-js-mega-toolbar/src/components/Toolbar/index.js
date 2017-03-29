@@ -1,9 +1,6 @@
 import React from 'react';
 import { getVisibleSelectionRect } from 'draft-js';
 
-// TODO make toolbarHeight to be determined or a parameter
-const toolbarHeight = 55;
-
 export default class Toolbar extends React.Component {
 
   state = {
@@ -19,12 +16,11 @@ export default class Toolbar extends React.Component {
   }
 
   onVisibilityChanged = (isVisible) => {
-    // need to wait a tick for window.getSelection() to be accurate
-    // when focusing editor with already present selection
+    const toolbarHeightOffset = 55
     setTimeout(() => {
       const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined;
       const position = selectionRect ? {
-        top: (selectionRect.top + window.scrollY) - toolbarHeight,
+        top: (selectionRect.top + window.scrollY) - toolbarHeightOffset,
         left: selectionRect.left + window.scrollX + (selectionRect.width / 2),
         transform: 'translate(-50%) scale(1)'
       } : {
