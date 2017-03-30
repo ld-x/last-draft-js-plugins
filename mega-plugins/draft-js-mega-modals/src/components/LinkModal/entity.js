@@ -43,3 +43,11 @@ export function getCurrentEntity (editorState) {
   }
   return null
 }
+
+export function removeEntity (entityType = 'LINK', editorState, setEditorState) {
+  const selection = editorState.getSelection()
+
+  if (!selection.isCollapsed()) {
+    setEditorState(RichUtils.toggleLink(editorState, selection, null))
+  }
+}

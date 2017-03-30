@@ -39,3 +39,10 @@
   display: inline-block;
   vertical-align: bottom;
 }
+
+.modalError {
+  transition: height 0.2s ease-in-out;
+  color: #fff;
+  font-size: 12px;
+  margin: -8px 2rem 0 2rem;
+}
