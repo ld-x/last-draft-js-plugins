@@ -1,16 +1,18 @@
 import React from 'react';
 
 import {
+  ColorModal,
   EmbedModal,
-  GifModal,
   EmojiModal,
+  GifModal,
   LinkModal
 } from '../../../../draft-js-mega-modals/src/'
 
 const getModalByType = (type) => {
-  if (type === 'gif') { return GifModal }
+  if (type === 'color') { return ColorModal }
   if (type === 'embed') { return EmbedModal }
   if (type === 'emoji') { return EmojiModal }
+  if (type === 'gif') { return GifModal }
   if (type === 'link') { return LinkModal }
 
   return undefined

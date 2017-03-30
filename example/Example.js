@@ -83,6 +83,9 @@ const embedPlugin = createEmbedPlugin()
 import createLinkPlugin from '../mega-plugins/draft-js-mega-link/src/'
 const linkPlugin = createLinkPlugin()
 
+/* Color */
+import colorStyleMap from '../mega-plugins/draft-js-mega-color/src/'
+
 /* init the plugins */
 const plugins = [
   dndPlugin, focusPlugin, alignmentPlugin, resizeablePlugin, imagePlugin,
@@ -139,6 +142,7 @@ export default class Final extends Component {
             editorState={this.state.editorState}
             onChange={this.onChange}
             plugins={plugins}
+            customStyleMap={colorStyleMap}
             ref={(element) => { this.editor = element; }}
           />
           <AlignmentTool />

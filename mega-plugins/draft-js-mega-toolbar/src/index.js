@@ -11,6 +11,7 @@ import {
 
 import {
   AddLinkButton,
+  AddColorButton
 } from '../../draft-js-mega-buttons/src/'
 
 import createStore from './utils/createStore';
@@ -37,7 +38,8 @@ const createInlineToolbarPlugin = (config = {}) => {
       BlockquoteButton,
       CodeBlockButton,
       UnorderedListButton,
-      OrderedListButton
+      OrderedListButton,
+      AddColorButton
     ]
   } = config;
 

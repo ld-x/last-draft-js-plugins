@@ -1,13 +1,15 @@
-import AddImageButton from './components/AddImageButton';
-import AddLinkButton from './components/AddLinkButton';
-import AddEmbedButton from './components/AddEmbedButton';
-import AddGifButton from './components/AddGifButton';
-import AddEmojiButton from './components/AddEmojiButton';
+import AddColorButton from './components/AddColorButton'
+import AddEmbedButton from './components/AddEmbedButton'
+import AddEmojiButton from './components/AddEmojiButton'
+import AddGifButton from './components/AddGifButton'
+import AddImageButton from './components/AddImageButton'
+import AddLinkButton from './components/AddLinkButton'
 
 export {
-  AddLinkButton,
-  AddImageButton,
+  AddColorButton,
   AddEmbedButton,
+  AddEmojiButton,
   AddGifButton,
-  AddEmojiButton
+  AddImageButton,
+  AddLinkButton
 };

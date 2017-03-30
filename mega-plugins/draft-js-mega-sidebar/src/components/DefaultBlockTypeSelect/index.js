@@ -4,7 +4,7 @@ import {
   AddImageButton,
   AddEmbedButton,
   AddGifButton,
-  AddEmojiButton
+  AddEmojiButton,
 } from '../../../../draft-js-mega-buttons/src/'
 
 import BlockTypeSelect from '../BlockTypeSelect';
