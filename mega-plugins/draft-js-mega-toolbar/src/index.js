@@ -13,7 +13,7 @@ import {
 } from 'draft-js-buttons'; // eslint-disable-line import/no-unresolved
 
 import {
-  AddEmbedButton,
+  AddLinkButton,
 } from '../../draft-js-mega-buttons/src/'
 
 import createStore from './utils/createStore';
@@ -43,7 +43,7 @@ const createInlineToolbarPlugin = (config = {}) => {
       CodeBlockButton,
       UnorderedListButton,
       OrderedListButton,
-      AddEmbedButton
+      AddLinkButton
     ]
   } = config;
 

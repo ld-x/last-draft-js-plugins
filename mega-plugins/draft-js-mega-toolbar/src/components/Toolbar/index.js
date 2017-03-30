@@ -19,14 +19,14 @@ export default class Toolbar extends React.Component {
 
   onVisibilityChanged = (isVisible) => {
     const toolbarHeightOffset = 55
-    setTimeout(() => {
-      const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined;
+    const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined;
 
-      const top = (selectionRect.top === undefined) ? 0 : (selectionRect.top + window.scrollY) - toolbarHeightOffset
-      const left = (selectionRect.left === undefined) ? 0 : selectionRect.left + window.scrollX + (selectionRect.width / 2)
-      const position = { top, left }
-      this.setState({position});
-    }, 0);
+    if (selectionRect === undefined || selectionRect === null) { return }
+    console.log(selectionRect)
+    const top = (selectionRect.top === undefined) ? 0 : (selectionRect.top + window.scrollY) - toolbarHeightOffset
+    const left = (selectionRect.left === undefined) ? 0 : selectionRect.left + window.scrollX + (selectionRect.width / 2)
+    const position = { top, left }
+    this.setState({position});
   }
 
   openModal = (type) => {

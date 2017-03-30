@@ -79,12 +79,15 @@ const { SideToolbar } = sideToolbarPlugin
 import createEmbedPlugin from '../mega-plugins/draft-js-mega-embed/src/'
 const embedPlugin = createEmbedPlugin()
 
+/* Link */
+import createLinkPlugin from '../mega-plugins/draft-js-mega-link/src/'
+const linkPlugin = createLinkPlugin()
 
 /* init the plugins */
 const plugins = [
   dndPlugin, focusPlugin, alignmentPlugin, resizeablePlugin, imagePlugin,
   counterPlugin, emojiPlugin, hashtagPlugin, inlineToolbarPlugin, linkifyPlugin,
-  mentionPlugin, sideToolbarPlugin, undoPlugin, embedPlugin
+  mentionPlugin, sideToolbarPlugin, undoPlugin, embedPlugin, linkPlugin
 ]
 
 /* init the state, either from raw, html or text */

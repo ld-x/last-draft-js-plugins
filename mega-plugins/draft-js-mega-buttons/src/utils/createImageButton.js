@@ -14,8 +14,6 @@ export default ({ children }) => (
       const file = e.target.files[0]
       const src = window.URL.createObjectURL(file)
       const imageData = {src: src, type: 'placeholder'}
-      /* TODO make this generic for drag and drop, add async */
-      //this.props.uploadFile(file)
       this.props.setEditorState(insertDataBlock(this.props.getEditorState(), imageData, 'image'))
     }
 
