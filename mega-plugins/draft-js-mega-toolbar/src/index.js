@@ -3,9 +3,6 @@ import {
   BoldButton,
   ItalicButton,
   UnderlineButton,
-  CodeButton,
-  HeadlineOneButton,
-  HeadlineTwoButton,
   BlockquoteButton,
   CodeBlockButton,
   UnorderedListButton,
@@ -36,14 +33,11 @@ const createInlineToolbarPlugin = (config = {}) => {
       BoldButton,
       ItalicButton,
       UnderlineButton,
-      CodeButton,
-      HeadlineOneButton,
-      HeadlineTwoButton,
+      AddLinkButton,
       BlockquoteButton,
       CodeBlockButton,
       UnorderedListButton,
-      OrderedListButton,
-      AddLinkButton
+      OrderedListButton
     ]
   } = config;
 
