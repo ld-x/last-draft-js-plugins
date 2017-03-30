@@ -5,6 +5,8 @@ export default class Toolbar extends React.Component {
 
   state = {
     isVisible: false,
+    modalVisible: false,
+    modal: null
   }
 
   componentWillMount() {
@@ -19,35 +21,69 @@ export default class Toolbar extends React.Component {
     const toolbarHeightOffset = 55
     setTimeout(() => {
       const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined;
-      const position = selectionRect ? {
-        top: (selectionRect.top + window.scrollY) - toolbarHeightOffset,
-        left: selectionRect.left + window.scrollX + (selectionRect.width / 2),
-        transform: 'translate(-50%) scale(1)'
-      } : {
-        transform: 'translate(-50%) scale(0)',
-      };
-      this.setState({
-        position,
-      });
+
+      const top = (selectionRect.top === undefined) ? 0 : (selectionRect.top + window.scrollY) - toolbarHeightOffset
+      const left = (selectionRect.left === undefined) ? 0 : selectionRect.left + window.scrollX + (selectionRect.width / 2)
+      const position = { top, left }
+      this.setState({position});
     }, 0);
+  }
+
+  openModal = (type) => {
+    const modal = this.props.getModalByType(type)
+    this.setState({ modal }, () => {
+      this.setState({ modalVisible: true })
+    })
+  }
+
+  closeModal = () => {
+    this.setState({ modalVisible: false })
   }
 
   render() {
     const { theme, store } = this.props;
+    const { modal, modalVisible, position } = this.state
+    let Modal = modal
+    let getEditorState = store.getItem('getEditorState')
+    let editorState = getEditorState()
+
+    let show = true
+    if (editorState.getSelection().isCollapsed()) {
+      show = false
+    }
+    let toolbarStyle = { display: show ? 'flex' : 'none' }
+    if (position !== undefined) {
+      toolbarStyle = Object.assign(position, toolbarStyle)
+      toolbarStyle = {...toolbarStyle}
+    }
+
     return (
       <div
         className={theme.toolbarStyles.toolbar}
-        style={this.state.position}
+        style={toolbarStyle}
       >
-        {this.props.structure.map((Component, index) => (
-          <Component
-            key={index}
-            theme={theme.buttonStyles}
-            getEditorState={store.getItem('getEditorState')}
-            setEditorState={store.getItem('setEditorState')}
-            addLink={store.getItem('addLink')}
-          />
-        ))}
+        {
+          modalVisible &&
+            <Modal
+              getEditorState={store.getItem('getEditorState')}
+              setEditorState={store.getItem('setEditorState')}
+              theme={theme}
+              closeModal={::this.closeModal}
+              openModal={::this.openModal} />
+        }
+        {
+          !modalVisible &&
+            this.props.structure.map((Component, index) => (
+              <Component
+                key={index}
+                theme={theme.buttonStyles}
+                getEditorState={store.getItem('getEditorState')}
+                setEditorState={store.getItem('setEditorState')}
+                addLink={store.getItem('addLink')}
+                closeModal={::this.closeModal}
+                openModal={::this.openModal} />
+            ))
+        }
       </div>
     );
   }

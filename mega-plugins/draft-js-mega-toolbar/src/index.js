@@ -11,14 +11,21 @@ import {
   UnorderedListButton,
   OrderedListButton
 } from 'draft-js-buttons'; // eslint-disable-line import/no-unresolved
+
+import {
+  AddEmbedButton,
+} from '../../draft-js-mega-buttons/src/'
+
 import createStore from './utils/createStore';
 import Toolbar from './components/Toolbar';
 import Separator from './components/Separator';
 import buttonStyles from './buttonStyles.css';
 import toolbarStyles from './toolbarStyles.css';
+import modalStyles from './modalStyles.css';
+import getModalByType from './components/getModalByType'
 
 const createInlineToolbarPlugin = (config = {}) => {
-  const defaultTheme = { buttonStyles, toolbarStyles };
+  const defaultTheme = { buttonStyles, toolbarStyles, modalStyles };
 
   const defaultaddLink = undefined;
 
@@ -35,7 +42,8 @@ const createInlineToolbarPlugin = (config = {}) => {
       BlockquoteButton,
       CodeBlockButton,
       UnorderedListButton,
-      OrderedListButton
+      OrderedListButton,
+      AddEmbedButton
     ]
   } = config;
 
@@ -47,6 +55,7 @@ const createInlineToolbarPlugin = (config = {}) => {
   const toolbarProps = {
     store,
     structure,
+    getModalByType,
     theme,
   };
 

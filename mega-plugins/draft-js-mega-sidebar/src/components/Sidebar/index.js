@@ -53,10 +53,9 @@ export default class Sidebar extends React.Component {
 
   render() {
     const { theme, store } = this.props
-    const { modal } = this.state
-    let InputModal = modal
+    const { modal, modalVisible } = this.state
+    let Modal = modal
 
-    const { modalVisible } = this.state
     return (
       <div
         className={theme.sidebarStyles.wrapper}
@@ -64,7 +63,7 @@ export default class Sidebar extends React.Component {
       >
       {
         modalVisible &&
-          <InputModal
+          <Modal
             getEditorState={store.getItem('getEditorState')}
             setEditorState={store.getItem('setEditorState')}
             theme={theme}
