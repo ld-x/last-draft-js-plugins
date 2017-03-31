@@ -111,12 +111,12 @@ export default class Final extends Component {
     this.setState({ editorState })
 
     let raw = convertToRaw(editorState.getCurrentContent())
-    this.logState('raw state:', JSON.stringify(raw))
+    this.logState('raw state:', raw)
   }
 
   logState(type, raw) {
     //console.log(type)
-    //console.log(JSON.stringify(raw))
+    console.log(JSON.stringify(raw))
   }
 
   focus = () => {
@@ -156,14 +156,17 @@ export default class Final extends Component {
           />
         </div>
 
-        <div className='options'>
-          <div><CharCounter limit={300} /> characters out of an allowed 300</div>
-          <div><WordCounter limit={50} /> words out of an allowed 50</div>
+        {
+          /*
+          <div className='options'>
+            <div><CharCounter limit={300} /> characters out of an allowed 300</div>
+            <div><WordCounter limit={50} /> words out of an allowed 50</div>
 
-          <UndoButton />
-          <RedoButton />
-        </div>
-
+            <UndoButton />
+            <RedoButton />
+          </div>
+          */
+        }
       </div>
     )
   }

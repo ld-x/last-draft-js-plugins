@@ -20,10 +20,10 @@ class App extends Component {
     <div>
         <div className="title">
       		<h1>
-      			<span className="blue">L</span>
-      			<span className="red">A</span>
-      			<span className="purple">S</span>
-      			<span className="green">T</span>
+      			<span className="blue">M</span>
+      			<span className="red">E</span>
+      			<span className="purple">G</span>
+      			<span className="green">A</span>
             <span style={{marginLeft: '1rem'}}></span>
 
       			<span className="pink">D</span>

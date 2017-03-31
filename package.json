@@ -1,14 +1,10 @@
 {
-  "name": "last-draft",
-  "version": "2.0.1",
-  "description": "Last Draft... A Draft.js Editor",
+  "name": "megadraft-js-plugins",
+  "version": "1.0.0",
+  "description": "Megadraft draft-js-plugins",
   "main": "lib/index.js",
   "scripts": {
-    "test": "tape test/index.js",
     "lint": "standard 'src/**/*.js'; exit 0",
-    "lint:fix": "standard --fix 'src/**/*.js'; exit 0",
-    "build": "rm -rf lib && babel src --out-dir lib --copy-files && npm run styles",
-    "styles": "cp -r example/styles lib && rm lib/styles/example.css",
     "site": "NODE_ENV=prod webpack --config example/webpack.config.prod",
     "dev": "NODE_ENV=dev webpack-dev-server --port 3000 --inline --hot --config example/webpack.config"
   },
@@ -17,9 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vacenz/last-draft"
+    "url": "https://github.com/vacenz/megadraft-js-plugins.git"
   },
-  "author": "Steven Iseki <stevenisekimartin@gmail.com>",
+  "authors": [
+    "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
+    "Nik Graf <nik@nikgraf.com> (http://www.nikgraf.com)",
+    "Steven Iseki <stevenisekimartin@gmail.com> (https://github.com/StevenIseki)",
+    "Marcelo Jorge Vieira <metal@alucinados.com> (https://github.com/marcelometal)"
+  ],
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -56,20 +57,10 @@
     "express": "^4.13.4",
     "html-webpack-plugin": "^2.16.0",
     "jsdom": "^9.11.0",
-    "ld-audio": "2.0.0",
-    "ld-color-picker": "2.0.0",
-    "ld-emoji": "2.0.0",
-    "ld-gif": "2.0.0",
-    "ld-html": "2.0.0",
-    "ld-mention": "2.0.0",
-    "ld-sticker": "2.0.0",
-    "ld-todo": "2.0.0",
-    "ld-video": "2.0.0",
     "react": ">=15.3.1",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": ">=15.3.1",
     "standard": "^8.6.0",
-    "style-loader": "^0.13.1",
     "tape": "^4.6.3",
     "webpack": "2.1.0-beta.27",
     "webpack-visualizer-plugin": "^0.1.11",
