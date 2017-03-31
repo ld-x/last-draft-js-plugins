@@ -6,20 +6,8 @@
 
 ![](https://raw.githubusercontent.com/vacenz/last-draft/master/example/public/screenshot.gif)
 
-A work in progress attempt to move last-draft and megadraft over to [draft-js-plugins](https://draft-js-plugins.com)
+A work in progress attempt to move [last-draft](https://github.com/vacenz/last-draft) and [megadraft](https://github.com/globocom/megadraft) over to [draft-js-plugins](https://draft-js-plugins.com)
 
-
-#### `plugins`
-Moving over the Megadraft toolbar and sidebar as plugins. Plus the Last Draft plugins below:
-
-- [ld-video](https://github.com/vacenz/ld-video) - Adds embed video functionality from youtube and vimeo
-- [ld-audio](https://github.com/steveniseki/ld-audio) - Adds an audio player with soundcloud support
-- [ld-color-picker](https://github.com/steveniseki/ld-color-picker) - Adds Color picker functionality
-- [ld-emoji](https://github.com/vacenz/ld-emoji) - Adds emoji functionality
-- [ld-gif](https://github.com/steveniseki/ld-gif) - Adds gif functionality from Giphy
-- [ld-mention](https://github.com/steveniseki/ld-mention) - Adds mention functionality
-- [ld-html](https://github.com/steveniseki/ld-html) - Adds Edit html functionality
-- [ld-todo](https://github.com/vacenz/ld-todo) - Adds todo functionality
 
 ## Development
 
