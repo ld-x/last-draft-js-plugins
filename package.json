@@ -2,7 +2,6 @@
   "name": "megadraft-js-plugins",
   "version": "1.0.0",
   "description": "Megadraft draft-js-plugins",
-  "main": "lib/index.js",
   "scripts": {
     "lint": "standard 'src/**/*.js'; exit 0",
     "site": "NODE_ENV=prod webpack --config example/webpack.config.prod",

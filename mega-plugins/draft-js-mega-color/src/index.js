@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2016, vace.nz (https://github.com/vacenz)
- *
- * License: MIT
- */
-
 import {colors} from './colors'
 
 const styleMap = {}
