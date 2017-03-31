@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {RichUtils} from 'draft-js'
-import styled from 'styled-components'
 import Picker from './Picker'
 
 export default class extends Component {
@@ -17,16 +16,14 @@ export default class extends Component {
   }
 
   render () {
+    const { theme } = this.props
     return (
-      <Wrapper className='ld-gif-modal-wrapper'>
-        <Picker onSelected={::this.setColor} closeModal={this.props.closeModal} />
-      </Wrapper>
+      <div style={{width: '260px'}} className={theme.modalStyles.modalWrapper}>
+        <Picker
+          onSelected={::this.setColor}
+          closeModal={this.props.closeModal}
+          theme={theme} />
+      </div>
     )
   }
 }
-
-const Wrapper = styled.div`
-  position: relative;
-  background-color: white;
-  width: 260px;
-`

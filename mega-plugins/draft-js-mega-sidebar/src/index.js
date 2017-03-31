@@ -6,10 +6,12 @@ import buttonStyles from './buttonStyles.css';
 import blockTypeSelectStyles from './blockTypeSelectStyles.css';
 import sidebarStyles from './sidebarStyles.css';
 import modalStyles from './modalStyles.css';
+import gifPickerStyles from './gifPickerStyles.css'
+import emojiPickerStyles from './emojiPickerStyles.css'
 import getModalByType from './components/getModalByType'
 
 export default (config = {}) => {
-  const defaultTheme = { buttonStyles, blockTypeSelectStyles, sidebarStyles, modalStyles };
+  const defaultTheme = { buttonStyles, blockTypeSelectStyles, sidebarStyles, modalStyles, gifPickerStyles, emojiPickerStyles }
 
   const store = createStore({
     isVisible: false,

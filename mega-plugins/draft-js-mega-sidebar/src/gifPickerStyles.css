@@ -1,0 +1,62 @@
+.wrapper {
+  position: absolute;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  background-color: inherit;
+  box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  height: 400px;
+  overflow-y: scroll;
+  z-index: 100;
+  padding: 1rem;
+  margin-top: -3rem;
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  align-items: baseline;
+}
+
+.gif {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 0.21rem;
+}
+
+.input {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  color: inherit;
+  font-size: 15px;
+  height: auto;
+  line-height: 1.2;
+  padding: 1rem;
+  margin: 1rem 0.2rem;
+  z-index: 100;
+}
+.input:focus {
+  outline: none;
+}
+
+.closeWrapper {
+  position: absolute;
+  top: 0.2rem;
+  right: 0;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  color: #ccc;
+  width: 200px;
+  margin: 0 1rem;
+}
+.closeWrapper:hover {
+  color: #9d1d20;
+}
+
+.close {
+  display: block;
+  margin: 0 0 0 auto;
+}

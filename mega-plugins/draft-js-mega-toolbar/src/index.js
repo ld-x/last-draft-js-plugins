@@ -20,10 +20,11 @@ import Separator from './components/Separator';
 import buttonStyles from './buttonStyles.css';
 import toolbarStyles from './toolbarStyles.css';
 import modalStyles from './modalStyles.css';
+import colorPickerStyles from './colorPickerStyles.css'
 import getModalByType from './components/getModalByType'
 
 const createInlineToolbarPlugin = (config = {}) => {
-  const defaultTheme = { buttonStyles, toolbarStyles, modalStyles };
+  const defaultTheme = { buttonStyles, toolbarStyles, modalStyles, colorPickerStyles };
 
   const defaultaddLink = undefined;
 

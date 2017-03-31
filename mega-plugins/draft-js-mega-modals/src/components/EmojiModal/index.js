@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import styled from 'styled-components'
 import Picker from './Picker'
 import { Modifier, EditorState } from 'draft-js'
 
@@ -31,16 +30,15 @@ export default class extends Component {
   }
 
   render () {
+    const { theme } = this.props;
+    console.log(theme)
     return (
-      <Wrapper className='ld-gif-modal-wrapper'>
-        <Picker onSelected={::this.addEmoji} closeModal={this.props.closeModal} />
-      </Wrapper>
+      <div className={theme.modalStyles.modalWrapper}>
+        <Picker
+          onSelected={::this.addEmoji}
+          closeModal={this.props.closeModal}
+          theme={theme} />
+      </div>
     )
   }
 }
-
-const Wrapper = styled.div`
-  position: relative;
-  background-color: white;
-  width: 360px;
-`

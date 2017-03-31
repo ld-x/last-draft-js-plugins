@@ -5,9 +5,6 @@ module.exports = {
   entry: './example/index.js',
   devtool: 'inline-source-map',
   output: { filename: 'bundle.js', publicPath: '' },
-  resolve: {
-    alias: { 'styled-components$': 'styled-components/lib/index.js' }
-  },
   module: {
     rules: [
       { test: /\.css$/, loader: 'style-loader!css-loader?modules' },

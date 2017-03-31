@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 
 /* list of emoji's sourced from http://getemoji.com */
 const PEOPLE_EMOJIS = ['😀', '😃', '😄', '😁', '😆', '😅', '😂', '😇', '🤣', '☺️', '😊', '🙂', '🙃', '😉', '😌', '😍', '😘', '😗', '😙', '😚', '😋', '😜', '😝', '😛', '🤑', '🤗', '🤓', '😎', '🤡', '🤠', '😏', '😒', '😞', '😔', '😟', '😕', '🙁', '☹️', '😣', '😖', '😫', '😩', '😤', '😠', '😡', '😶', '😐', '😑', '😯', '😦', '😧', '😮', '😲', '😵', '😳', '😱', '😨', '😰', '😢', '😥', '🤤', '😭', '😓', '😪', '😴', '🙄', '🤔', '🤥', '😬', '🤐', '🤢', '🤧', '😷', '🤒', '🤕', '😈', '👿', '👹', '👺', '💩', '👻', '💀', '☠️', '👽', '👾', '🤖', '🎃', '😺', '😸', '😹', '😻', '😼', '😽', '🙀', '😿', '😾', '👐', '🙌', '👏', '🙏', '🤝', '👍', '👎', '👊', '✊', '🤛', '🤜', '🤞', '✌️', '🤘', '👌', '👈', '👉', '👆', '👇', '☝️', '✋', '🤚', '🖐', '🖖', '👋', '🤙', '💪', '🖕', '✍️', '🤳', '💅', '🖖', '💄', '💋', '👄', '👅', '👂', '👃', '👣', '👁', '👀', '👗', '👠', '👞', '👟', '👒', '🎩', '🎓', '👑', '⛑', '🎒', '👝', '👛', '👜', '💼', '👓', '🕶', '☂️']
@@ -55,164 +54,79 @@ export default class extends Component {
 
   renderTabs () {
     const {emojiCategory} = this.state
+    const {theme} = this.props
     return (
-      <Tabs className='emoji-picker-tabs'>
-        <Title
-          className='emoji-picker-tab-title'
-          selected={emojiCategory === 'PEOPLE_EMOJIS'}
+      <div className={theme.emojiPickerStyles.tabWrapper}>
+        <p
+          className={theme.emojiPickerStyles.tab}
+          style={{opacity: emojiCategory === 'PEOPLE_EMOJIS' ? '1' : '0.5'}}
           onClick={() => {this.toggleEmojis('PEOPLE_EMOJIS')}}>
           😀
-        </Title>
+        </p>
 
-        <Title
-          className='emoji-picker-tab-title'
-          selected={emojiCategory === 'ANIMALS_NATURE_EMOJIS'}
+        <p
+          className={theme.emojiPickerStyles.tab}
+          style={{opacity: emojiCategory === 'ANIMALS_NATURE_EMOJIS' ? '1' : '0.5'}}
           onClick={() => {this.toggleEmojis('ANIMALS_NATURE_EMOJIS')}}>
           🦊
-        </Title>
-        <Title
-          className='emoji-picker-tab-title'
-          selected={emojiCategory === 'FOOD_SPORTS_EMOJIS'}
+        </p>
+        <p
+          className={theme.emojiPickerStyles.tab}
+          style={{opacity: emojiCategory === 'FOOD_SPORTS_EMOJIS' ? '1' : '0.5'}}
           onClick={() => {this.toggleEmojis('FOOD_SPORTS_EMOJIS')}}>
           🍏
-        </Title>
-        <Title
-          className='emoji-picker-tab-title'
-          selected={emojiCategory === 'TRAVEL_PLACES_EMOJIS'}
+        </p>
+        <p
+          className={theme.emojiPickerStyles.tab}
+          style={{opacity: emojiCategory === 'TRAVEL_PLACES_EMOJIS' ? '1' : '0.5'}}
           onClick={() => {this.toggleEmojis('TRAVEL_PLACES_EMOJIS')}}>
           🚗
-        </Title>
-        <Title
-          className='emoji-picker-tab-title'
-          selected={emojiCategory === 'OBJECTS_EMOJIS'}
+        </p>
+        <p
+          className={theme.emojiPickerStyles.tab}
+          style={{opacity: emojiCategory === 'OBJECTS_EMOJIS' ? '1' : '0.5'}}
           onClick={() => {this.toggleEmojis('OBJECTS_EMOJIS')}}>
           💎
-        </Title>
-        <Title
-          className='emoji-picker-tab-title'
-          selected={emojiCategory === 'SYMBOLS_FLAGS_EMOJIS'}
+        </p>
+        <p
+          className={theme.emojiPickerStyles.tab}
+          style={{opacity: emojiCategory === 'SYMBOLS_FLAGS_EMOJIS' ? '1' : '0.5'}}
           onClick={() => {this.toggleEmojis('SYMBOLS_FLAGS_EMOJIS')}}>
           ❤️
-        </Title>
-      </Tabs>
+        </p>
+      </div>
     )
   }
 
   render() {
     const {emojis} = this.state
+    const {theme} = this.props
     return (
-      <EmojiPickerWrapper className='ld-emoji-picker-wrapper-outer'>
+      <div className={theme.emojiPickerStyles.wrapper}>
         {this.renderTabs()}
 
-        <CloseWrapper className='ld-emoji-button-close-wrapper' onClick={this.props.closeModal}>
-          <Close width='24' height='24' viewBox='0 0 24 24' className='ld-emoji-button-close'>
+        <div className={theme.emojiPickerStyles.closeWrapper} onClick={this.props.closeModal}>
+          <svg width='24' height='24' viewBox='0 0 24 24'>
             <g fill='currentColor' fillRule='evenodd'>
               <path d='M16.95 5.636l1.414 1.414L7.05 18.364 5.636 16.95z' />
               <path d='M16.95 18.364l1.414-1.414L7.05 5.636 5.636 7.05z' />
             </g>
-          </Close>
-        </CloseWrapper>
+          </svg>
+        </div>
 
-        <EmojiWrapper className='ld-emoji-picker-wrapper'>
+        <div className={theme.emojiPickerStyles.picker}>
           {
             emojis.map((emoji, index) => (
-              <Emoji
-                className='ld-emoji-picker-item'
+              <span
+                className={theme.emojiPickerStyles.emoji}
                 key={index}
                 onClick={() => {this.onEmojiSelect(emoji)}}>
                 {emoji}
-              </Emoji>
+              </span>
             ))
           }
-        </EmojiWrapper>
-      </EmojiPickerWrapper>
+        </div>
+      </div>
     )
   }
 }
-
-const EmojiPickerWrapper = styled.div`
-  position: absolute;
-  margin-top: 1rem;
-  border: 1px solid #F1F1F1;
-  border-radius: 2px;
-  background-color: inherit;
-  box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.3);
-  width: 340px;
-  min-height: 360px;
-  z-index: 100;
-  margin-top: -3rem;
-`
-
-const EmojiPicker = styled.div`
-  cursor: pointer;
-  border: 1px solid #eee;
-  padding: 0.4rem 0.8rem;
-  margin: 0;
-  border-radius: 2px;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-`
-
-const EmojiWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.8rem;
-  padding-top: 0;
-  margin-top: 1rem;
-  border-radius: 2px;
-  align-items: baseline;
-  float: left;
-  width: 85%;
-`
-
-const Emoji = styled.span`
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.21rem;
-  img {
-    height: 16px !important;
-    width: 16px !important;
-  }
-`
-
-const Tabs = styled.div`
-  flex-direction: column;
-  float: left;
-  width: 15%;
-  height: 100%;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-`
-
-const Title = styled.p`
-  padding-left: 0.35rem;
-  padding: 0.8rem
-  margin: 0;
-  cursor: pointer;
-
-  img {
-    opacity: ${props => props.selected ? '1' : '0.5'};
-    height: 24px !important;
-    width: 24px !important;
-  }
-`
-
-const CloseWrapper = styled.div`
-  position: absolute;
-  top: 1rem;
-  right: 2px;
-  cursor: pointer;
-  border: 0;
-  background: transparent;
-  color: #ccc;
-
-  &:hover {
-    color: #9d1d20;
-  }
-`
-
-const Close = styled.svg`
-`

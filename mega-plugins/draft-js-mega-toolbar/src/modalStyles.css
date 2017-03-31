@@ -2,6 +2,9 @@
   white-space: nowrap;
   background: #fff;
   box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: white;
+  width: 360px;
 }
 
 .modalInput {

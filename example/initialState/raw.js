@@ -45,19 +45,6 @@ export const raw = {
        }
     },
     {
-        "key": "ov7r",
-        "text": " ",
-        "type": "atomic",
-        "depth": 0,
-        "inlineStyleRanges": [],
-        "entityRanges": [{
-            "offset": 0,
-            "length": 1,
-            "key": 0
-        }],
-        "data": {}
-    },
-    {
        "key":"bdh45",
        "text":"It is nice to see the color changes if we go over our limit, 300 characters and also 50 words",
        "type":"unstyled",

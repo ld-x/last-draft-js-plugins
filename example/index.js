@@ -17,8 +17,8 @@ class App extends Component {
 
   render () {
     return (
-      <div>
-      	<div className="title">
+    <div>
+        <div className="title">
       		<h1>
       			<span className="blue">L</span>
       			<span className="red">A</span>

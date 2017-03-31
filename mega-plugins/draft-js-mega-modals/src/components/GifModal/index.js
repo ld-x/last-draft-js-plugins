@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import insertDataBlock from './insertDataBlock'
-import styled from 'styled-components'
 import Picker from './Picker'
 
 export default class extends Component {
@@ -12,16 +11,14 @@ export default class extends Component {
   }
 
   render () {
+    const { theme } = this.props;
     return (
-      <Wrapper className='ld-gif-modal-wrapper'>
-        <Picker onSelected={::this.addGif} closeModal={this.props.closeModal} />
-      </Wrapper>
+      <div className={theme.modalStyles.modalWrapper} >
+        <Picker
+          onSelected={::this.addGif}
+          closeModal={this.props.closeModal}
+          theme={theme} />
+      </div>
     )
   }
 }
-
-const Wrapper = styled.div`
-  position: relative;
-  background-color: white;
-  width: 360px;
-`
