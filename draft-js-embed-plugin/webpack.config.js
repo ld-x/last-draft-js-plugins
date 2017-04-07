@@ -3,10 +3,8 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: {
-    embedStyles: './src/embedStyles.css'
-  },
-  output: { filename: './lib/bundle-[name].js' },
+  entry: { './src/index.js' },
+  output: { filename: './lib/bundle.js' },
   module: {
     rules: [
       {
@@ -21,6 +19,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("./lib/[name].css"),
+    new ExtractTextPlugin("./lib/plugin.css"),
   ]
 }

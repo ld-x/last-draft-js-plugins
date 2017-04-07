@@ -1788,9 +1788,9 @@ draft-js-dnd-plugin@^2.0.0-beta7:
     react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
-draft-js-embed-plugin@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-embed-plugin/-/draft-js-embed-plugin-1.0.0.tgz#88eeb8f8fd979d8b5448adca0c008354bbb8c868"
+draft-js-embed-plugin@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/draft-js-embed-plugin/-/draft-js-embed-plugin-1.0.2.tgz#8a26d93f9b2641af77b30d37f0256a3d9f5a68c1"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"

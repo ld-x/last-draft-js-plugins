@@ -6,7 +6,7 @@ module.exports = {
   output: { filename: 'bundle.js', publicPath: '' },
   module: {
     rules: [
-      { test: /\.css$/, loader: 'style-loader!css-loader?modules' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
       {
         test: /\.js$/,
         use: [ { loader: 'babel-loader', options: { presets: ['es2015', 'react', 'stage-0'] } } ],

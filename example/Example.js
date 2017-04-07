@@ -67,6 +67,7 @@ const { Sidebar } = sidebarPlugin
 /* Embed plugin */
 //import createEmbedPlugin from '../draft-js-embed-plugin/src/'
 import createEmbedPlugin from 'draft-js-embed-plugin'
+import 'draft-js-embed-plugin/lib/plugin.css'
 const embedPlugin = createEmbedPlugin()
 
 /* Link */
