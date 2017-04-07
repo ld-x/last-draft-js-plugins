@@ -10,9 +10,9 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-draft-js-color-picker-plugin@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.0.0.tgz#7b82320ce929a504199fe22a954404c077b54cfc"
+draft-js-color-picker-plugin@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.0.1.tgz#276f038347363ce9af0c068c9f2a35eb04217785"
   dependencies:
     react "15.4.2"
     react-dom "15.4.2"
