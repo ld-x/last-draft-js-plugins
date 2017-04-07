@@ -13,4 +13,4 @@ It includes 5 modals:
 - LinkModal which adds a link entity, requires `draft-js-link-plugin`
 
 ## Usage
-See `draft-js-sidebar-plugin` or `last-draft-js-toolbar-plugin` for example usage, or to include the modals, just add the above plugins which use the modal plugin.
+See `last-draft-js-sidebar-plugin` or `last-draft-js-toolbar-plugin` for example usage, or to include the modals, just add the above plugins which use the modal plugin.

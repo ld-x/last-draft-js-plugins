@@ -61,8 +61,8 @@ const toolbarPlugin = createToolbarPlugin()
 const { Toolbar } = toolbarPlugin
 
 /* Side Toolbar */
-import createSidebarPlugin from 'draft-js-sidebar-plugin'
-import 'draft-js-sidebar-plugin/lib/plugin.css'
+import createSidebarPlugin from 'last-draft-js-sidebar-plugin'
+import 'last-draft-js-sidebar-plugin/lib/plugin.css'
 const sidebarPlugin = createSidebarPlugin()
 const { Sidebar } = sidebarPlugin
 

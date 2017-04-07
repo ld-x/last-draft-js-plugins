@@ -5,8 +5,8 @@
 ## Usage
 
 ```js
-import createSidebarPlugin from 'draft-js-sidebar-plugin'
-import 'draft-js-sidebar-plugin/lib/plugin.css'
+import createSidebarPlugin from 'last-draft-js-sidebar-plugin'
+import 'last-draft-js-sidebar-plugin/lib/plugin.css'
 const sidebarPlugin = createSidebarPlugin()
 const { Sidebar } = sidebarPlugin
 
@@ -21,7 +21,7 @@ const { Sidebar } = sidebarPlugin
 ## Importing the default styles
 
 The plugin ships with a default styling available at this location in the installed package:
-`node_modules/draft-js-sidebar-plugin/lib/plugin.css`.
+`node_modules/last-draft-js-sidebar-plugin/lib/plugin.css`.
 
 ### Webpack Usage
 Follow the steps below to import the css file by using Webpack's `style-loader` and `css-loader`.
@@ -43,6 +43,6 @@ Follow the steps below to import the css file by using Webpack's `style-loader` 
 3. Add the below import line to your component to tell Webpack to inject the styles.
 
     ```js
-    import 'draft-js-sidebar-plugin/lib/plugin.css';
+    import 'last-draft-js-sidebar-plugin/lib/plugin.css';
     ```
 4. Restart Webpack.

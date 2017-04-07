@@ -3284,9 +3284,9 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-last-draft-js-toolbar-plugin@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.0.1.tgz#ffa2b2f6e3000458282d0c66878dcad34add7c7f"
+last-draft-js-toolbar-plugin@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.0.2.tgz#a54d752bcf1c5070ce89f6bfdf48f729bfa9e3c9"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js "^0.10.0"
