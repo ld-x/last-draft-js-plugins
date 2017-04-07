@@ -5,7 +5,7 @@ import {
   AddEmbedButton,
   AddGifButton,
   AddEmojiButton
-} from '../../../../draft-js-buttons-plugin/src/'
+} from 'draft-js-buttons-plugin'
 
 import BlockTypeSelect from '../BlockTypeSelect'
 

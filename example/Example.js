@@ -60,18 +60,17 @@ const toolbarPlugin = createToolbarPlugin()
 const { Toolbar } = toolbarPlugin
 
 /* Side Toolbar */
-import createSidebarPlugin from '../draft-js-sidebar-plugin/src/'
+import createSidebarPlugin from 'draft-js-sidebar-plugin'
+import 'draft-js-sidebar-plugin/lib/plugin.css'
 const sidebarPlugin = createSidebarPlugin()
 const { Sidebar } = sidebarPlugin
 
 /* Embed plugin */
-//import createEmbedPlugin from '../draft-js-embed-plugin/src/'
 import createEmbedPlugin from 'draft-js-embed-plugin'
 import 'draft-js-embed-plugin/lib/plugin.css'
 const embedPlugin = createEmbedPlugin()
 
 /* Link plugin */
-//import createLinkPlugin from '../draft-js-link-plugin/src/'
 import createLinkPlugin from 'draft-js-link-plugin'
 import 'draft-js-link-plugin/lib/plugin.css'
 const linkPlugin = createLinkPlugin()
