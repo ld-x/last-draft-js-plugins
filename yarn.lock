@@ -1949,20 +1949,6 @@ draft-js-resizeable-plugin@^2.0.0-beta7:
     react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
-draft-js-sidebar-plugin@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/draft-js-sidebar-plugin/-/draft-js-sidebar-plugin-1.0.3.tgz#2baf67aa1b28cb0f729f4a08cd4940668605c3e2"
-  dependencies:
-    decorate-component-with-props "^1.0.2"
-    draft-js "^0.10.0"
-    draft-js-buttons "^2.0.0-beta9"
-    draft-js-buttons-plugin "1.0.0"
-    draft-js-modal-plugin "1.0.1"
-    immutable "~3.7.4"
-    react "15.4.2"
-    react-dom "15.4.2"
-    union-class-names "^1.0.0"
-
 draft-js@>=0.9.1, draft-js@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.0.tgz#29d16191012b932fdab28a9b37ec1538f421abf6"
@@ -3284,9 +3270,23 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-last-draft-js-toolbar-plugin@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.0.2.tgz#a54d752bcf1c5070ce89f6bfdf48f729bfa9e3c9"
+last-draft-js-sidebar-plugin@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.0.0.tgz#0c10f6af005a7bc67e0f4fcc3ca97c8d34c7d41b"
+  dependencies:
+    decorate-component-with-props "^1.0.2"
+    draft-js "^0.10.0"
+    draft-js-buttons "^2.0.0-beta9"
+    draft-js-buttons-plugin "1.0.0"
+    draft-js-modal-plugin "1.0.1"
+    immutable "~3.7.4"
+    react "15.4.2"
+    react-dom "15.4.2"
+    union-class-names "^1.0.0"
+
+last-draft-js-toolbar-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.0.tgz#723b3d9551c6e06d5055900d5d93041842f4a987"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js "^0.10.0"

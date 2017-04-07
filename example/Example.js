@@ -51,7 +51,6 @@ const mentionPlugin = createMentionPlugin({ mentions, positionSuggestions })
 const { MentionSuggestions } = mentionPlugin
 
 
-
 /* ld plugins */
 
 /* Toolbar */
