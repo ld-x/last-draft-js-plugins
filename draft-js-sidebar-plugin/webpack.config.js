@@ -14,7 +14,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader?modules&importLoaders=1&localIdentName=draftJsEmbedPlugin__[local]__[hash:base64:5]!postcss-loader' })
+        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader?modules&importLoaders=1&localIdentName=draftJsSidebarPlugin__[local]__[hash:base64:5]!postcss-loader' })
       }
     ]
   },

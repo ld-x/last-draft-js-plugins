@@ -1949,9 +1949,9 @@ draft-js-resizeable-plugin@^2.0.0-beta7:
     react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
-draft-js-sidebar-plugin@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-sidebar-plugin/-/draft-js-sidebar-plugin-1.0.0.tgz#94629a17bfd3c7db406c4c7a9e8fda624509e5cd"
+draft-js-sidebar-plugin@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/draft-js-sidebar-plugin/-/draft-js-sidebar-plugin-1.0.1.tgz#c2b58f76d61feea1b5f1dbdfb18b0a467324a042"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js "^0.10.0"
