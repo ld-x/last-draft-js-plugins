@@ -37,6 +37,7 @@
     "babel-register": "^6.7.2",
     "babel-runtime": "^6.6.1",
     "css-loader": "^0.26.1",
+    "draft-js-link-plugin": "1.0.2",
     "draft-js-alignment-plugin": "^2.0.0-beta7",
     "draft-js-counter-plugin": "^2.0.0-beta7",
     "draft-js-dnd-plugin": "^2.0.0-beta7",
@@ -73,7 +74,6 @@
   "dependencies": {
     "decorate-component-with-props": "^1.0.2",
     "draft-js": "^0.10.0",
-    "draft-js-link-plugin": "1.0.1",
     "emojione": "^2.2.6",
     "find-with-regex": "^1.0.2",
     "immutable": "^3.8.1",

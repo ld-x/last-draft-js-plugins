@@ -1869,9 +1869,9 @@ draft-js-inline-toolbar-plugin@^2.0.0-beta7:
     react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
-draft-js-link-plugin@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/draft-js-link-plugin/-/draft-js-link-plugin-1.0.1.tgz#2188a78c75449ea52fe209fa2a2e7fb04d130950"
+draft-js-link-plugin@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/draft-js-link-plugin/-/draft-js-link-plugin-1.0.2.tgz#44c44b5e6e4360bd129336d47c3314fcb119291a"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
