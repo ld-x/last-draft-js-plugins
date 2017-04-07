@@ -54,8 +54,9 @@ const { MentionSuggestions } = mentionPlugin
 
 /* ld plugins */
 
-/* toolbar */
-import createToolbarPlugin from '../draft-js-toolbar-plugin/src/'
+/* Toolbar */
+import createToolbarPlugin from 'last-draft-js-toolbar-plugin'
+import 'last-draft-js-toolbar-plugin/lib/plugin.css'
 const toolbarPlugin = createToolbarPlugin()
 const { Toolbar } = toolbarPlugin
 

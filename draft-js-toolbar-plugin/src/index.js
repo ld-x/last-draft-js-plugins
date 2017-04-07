@@ -20,7 +20,7 @@ import {
 import {
   AddLinkButton,
   AddColorButton
-} from '../../draft-js-buttons-plugin/src/'
+} from 'draft-js-buttons-plugin'
 
 import createStore from './utils/createStore'
 import Toolbar from './components/Toolbar'
