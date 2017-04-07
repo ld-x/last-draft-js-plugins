@@ -40,7 +40,7 @@
     "draft-js-link-plugin": "1.1.0",
     "draft-js-embed-plugin": "1.1.0",
     "draft-js-sidebar-plugin": "1.0.3",
-    "last-draft-js-toolbar-plugin": "1.0.3",
+    "last-draft-js-toolbar-plugin": "1.0.1",
     "draft-js-alignment-plugin": "^2.0.0-beta7",
     "draft-js-dnd-plugin": "^2.0.0-beta7",
     "draft-js-emoji-plugin": "^2.0.0-beta7",

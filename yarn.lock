@@ -3284,6 +3284,20 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
+last-draft-js-toolbar-plugin@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.0.1.tgz#ffa2b2f6e3000458282d0c66878dcad34add7c7f"
+  dependencies:
+    decorate-component-with-props "^1.0.2"
+    draft-js "^0.10.0"
+    draft-js-buttons "^2.0.0-beta9"
+    draft-js-buttons-plugin "1.0.0"
+    draft-js-modal-plugin "1.0.1"
+    immutable "~3.7.4"
+    react "15.4.2"
+    react-dom "15.4.2"
+    union-class-names "^1.0.0"
+
 lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"

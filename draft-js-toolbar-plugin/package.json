@@ -1,6 +1,6 @@
 {
   "name": "last-draft-js-toolbar-plugin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "LastDraft Toolbar Plugin for DraftJS",
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
