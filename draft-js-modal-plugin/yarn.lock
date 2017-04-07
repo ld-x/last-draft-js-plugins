@@ -10,23 +10,23 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-draft-js-color-picker-plugin@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.0.2.tgz#df51417da2ff98915347fe6a3faf7f1bb2c2985a"
+draft-js-color-picker-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.1.0.tgz#c13eb20602a30954ad3b2f7e40ca17293283942a"
   dependencies:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-emoji-picker-plugin@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.0.0.tgz#946f4a987a82277e906e43bed4b6a6692f7ee822"
+draft-js-emoji-picker-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.1.0.tgz#655babf7589ebaae588dd9d20b0d5a7eba31bb82"
   dependencies:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-gif-picker-plugin@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.0.0.tgz#e923544f9adbbd144e2d69473718cd639d5491ba"
+draft-js-gif-picker-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.1.0.tgz#6ee0897a2b014af11ebc8818bfe25e19731b44a3"
   dependencies:
     react "15.4.2"
     react-dom "15.4.2"
