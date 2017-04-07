@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import insertDataBlock from './insertDataBlock'
 
@@ -17,10 +17,10 @@ export default ({ children }) => (
       this.props.setEditorState(insertDataBlock(this.props.getEditorState(), imageData, 'image'))
     }
 
-    preventBubblingUp = (event) => { event.preventDefault(); }
+    preventBubblingUp = (event) => { event.preventDefault() }
 
-    render() {
-      const { theme } = this.props;
+    render () {
+      const { theme } = this.props
       return (
         <div
           className={theme.buttonWrapper}
@@ -29,7 +29,7 @@ export default ({ children }) => (
           <button
             className={theme.button}
             onClick={::this.onClick}
-            type="button"
+            type='button'
             children={children}
           />
 
@@ -42,7 +42,7 @@ export default ({ children }) => (
           </div>
         </div>
 
-      );
+      )
     }
   }
-);
+)

@@ -65,7 +65,7 @@ export default class extends Component {
   }
 
   render () {
-    const { theme } = this.props;
+    const { theme } = this.props
     return (
       <div className={theme.modalStyles.modalWrapper}>
         <input

@@ -20,4 +20,4 @@ export {
   AddGifButton,
   AddImageButton,
   AddLinkButton
-};
+}

@@ -6,7 +6,7 @@
  * License: MIT
  */
 
-import decorateComponentWithProps from 'decorate-component-with-props';
+import decorateComponentWithProps from 'decorate-component-with-props'
 import {
   BoldButton,
   ItalicButton,
@@ -15,26 +15,26 @@ import {
   CodeBlockButton,
   UnorderedListButton,
   OrderedListButton
-} from 'draft-js-buttons'; // eslint-disable-line import/no-unresolved
+} from 'draft-js-buttons' // eslint-disable-line import/no-unresolved
 
 import {
   AddLinkButton,
   AddColorButton
 } from '../../draft-js-buttons-plugin/src/'
 
-import createStore from './utils/createStore';
-import Toolbar from './components/Toolbar';
-import Separator from './components/Separator';
-import buttonStyles from './buttonStyles.css';
-import toolbarStyles from './toolbarStyles.css';
-import modalStyles from './modalStyles.css';
+import createStore from './utils/createStore'
+import Toolbar from './components/Toolbar'
+import Separator from './components/Separator'
+import buttonStyles from './buttonStyles.css'
+import toolbarStyles from './toolbarStyles.css'
+import modalStyles from './modalStyles.css'
 import colorPickerStyles from './colorPickerStyles.css'
 import getModalByType from './components/getModalByType'
 
 const createInlineToolbarPlugin = (config = {}) => {
-  const defaultTheme = { buttonStyles, toolbarStyles, modalStyles, colorPickerStyles };
+  const defaultTheme = { buttonStyles, toolbarStyles, modalStyles, colorPickerStyles }
 
-  const defaultaddLink = undefined;
+  const defaultaddLink = undefined
 
   const {
     theme = defaultTheme,
@@ -50,41 +50,41 @@ const createInlineToolbarPlugin = (config = {}) => {
       OrderedListButton,
       AddColorButton
     ]
-  } = config;
+  } = config
 
   const store = createStore({
     isVisible: false,
     addLink
-  });
+  })
 
   const toolbarProps = {
     store,
     structure,
     getModalByType,
-    theme,
-  };
+    theme
+  }
 
   return {
     initialize: ({ getEditorState, setEditorState }) => {
-      store.updateItem('getEditorState', getEditorState);
-      store.updateItem('setEditorState', setEditorState);
+      store.updateItem('getEditorState', getEditorState)
+      store.updateItem('setEditorState', setEditorState)
     },
     // Re-Render the text-toolbar on selection change
     onChange: (editorState) => {
-      const selection = editorState.getSelection();
+      const selection = editorState.getSelection()
       if (selection.getHasFocus() && !selection.isCollapsed()) {
-        store.updateItem('isVisible', true);
+        store.updateItem('isVisible', true)
       } else {
-        store.updateItem('isVisible', false);
+        store.updateItem('isVisible', false)
       }
-      return editorState;
+      return editorState
     },
-    InlineToolbar: decorateComponentWithProps(Toolbar, toolbarProps),
-  };
-};
+    InlineToolbar: decorateComponentWithProps(Toolbar, toolbarProps)
+  }
+}
 
-export default createInlineToolbarPlugin;
+export default createInlineToolbarPlugin
 
 export {
-  Separator,
-};
+  Separator
+}

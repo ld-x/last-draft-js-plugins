@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   ColorModal,
   EmbedModal,
@@ -16,6 +14,6 @@ const getModalByType = (type) => {
   if (type === 'link') { return LinkModal }
 
   return undefined
-};
+}
 
 export default getModalByType

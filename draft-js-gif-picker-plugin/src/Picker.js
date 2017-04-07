@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import React, { Component } from 'react'
 import 'whatwg-fetch'
 
@@ -32,7 +34,7 @@ export default class extends Component {
     }).then((response) => {
       return response.json()
     }).then((response) => {
-      let gifs = response.data.map((g, i) => {return g.images})
+      let gifs = response.data.map((g, i) => { return g.images })
       this.setState({gifs})
     })
   }
@@ -47,7 +49,7 @@ export default class extends Component {
     }).then((response) => {
       return response.json()
     }).then((response) => {
-      let gifs = response.data.map((g, i) => {return g.images})
+      let gifs = response.data.map((g, i) => { return g.images })
       this.setState({gifs})
     })
   }
@@ -72,7 +74,7 @@ export default class extends Component {
     this.setState({searchValue: ''})
   }
 
-  render() {
+  render () {
     const {gifs} = this.state
     const {visible, theme} = this.props
     return (
@@ -92,10 +94,10 @@ export default class extends Component {
         <input
           className={theme.gifPickerStyles.input}
           name='giphy-search'
-          type="text"
-          autoCapitalize="none"
-          autoComplete="off"
-          autoCorrect="off"
+          type='text'
+          autoCapitalize='none'
+          autoComplete='off'
+          autoCorrect='off'
           onChange={::this.onSearchChange}
           value={this.state.searchValue}
           onKeyDown={::this.onKeyDown}
@@ -108,7 +110,7 @@ export default class extends Component {
                 <img className={theme.gifPickerStyles.gif}
                   key={i}
                   src={gifUrl}
-                  onClick={() => {this.onGiphySelect(g)}} />
+                  onClick={() => { this.onGiphySelect(g) }} />
               )
             })
           }

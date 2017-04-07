@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
   ColorModal,
   EmbedModal,
@@ -13,6 +11,6 @@ const getModalByType = (type) => {
   if (type === 'emoji') { return EmojiModal }
   if (type === 'gif') { return GifModal }
   return undefined
-};
+}
 
 export default getModalByType

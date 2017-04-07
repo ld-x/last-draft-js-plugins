@@ -19,7 +19,7 @@ export default class extends Component {
 
   static get propTypes () {
     return {
-      onSelected: React.PropTypes.func.isRequired,
+      onSelected: React.PropTypes.func.isRequired
     }
   }
 
@@ -27,22 +27,22 @@ export default class extends Component {
     switch (emoji) {
       case 'PEOPLE_EMOJIS':
         this.setState({emojis: PEOPLE_EMOJIS, emojiCategory: 'PEOPLE_EMOJIS'})
-        break;
+        break
       case 'ANIMALS_NATURE_EMOJIS':
         this.setState({emojis: ANIMALS_NATURE_EMOJIS, emojiCategory: 'ANIMALS_NATURE_EMOJIS'})
-        break;
+        break
       case 'FOOD_SPORTS_EMOJIS':
         this.setState({emojis: FOOD_SPORTS_EMOJIS, emojiCategory: 'FOOD_SPORTS_EMOJIS'})
-        break;
+        break
       case 'TRAVEL_PLACES_EMOJIS':
         this.setState({emojis: TRAVEL_PLACES_EMOJIS, emojiCategory: 'TRAVEL_PLACES_EMOJIS'})
-        break;
+        break
       case 'OBJECTS_EMOJIS':
         this.setState({emojis: OBJECTS_EMOJIS, emojiCategory: 'OBJECTS_EMOJIS'})
-        break;
+        break
       case 'SYMBOLS_FLAGS_EMOJIS':
         this.setState({emojis: SYMBOLS_FLAGS_EMOJIS, emojiCategory: 'SYMBOLS_FLAGS_EMOJIS'})
-        break;
+        break
       default:
         this.setState({emojis: PEOPLE_EMOJIS, emojiCategory: 'PEOPLE_EMOJIS'})
     }
@@ -60,45 +60,45 @@ export default class extends Component {
         <p
           className={theme.emojiPickerStyles.tab}
           style={{opacity: emojiCategory === 'PEOPLE_EMOJIS' ? '1' : '0.5'}}
-          onClick={() => {this.toggleEmojis('PEOPLE_EMOJIS')}}>
+          onClick={() => { this.toggleEmojis('PEOPLE_EMOJIS') }}>
           😀
         </p>
 
         <p
           className={theme.emojiPickerStyles.tab}
           style={{opacity: emojiCategory === 'ANIMALS_NATURE_EMOJIS' ? '1' : '0.5'}}
-          onClick={() => {this.toggleEmojis('ANIMALS_NATURE_EMOJIS')}}>
+          onClick={() => { this.toggleEmojis('ANIMALS_NATURE_EMOJIS') }}>
           🦊
         </p>
         <p
           className={theme.emojiPickerStyles.tab}
           style={{opacity: emojiCategory === 'FOOD_SPORTS_EMOJIS' ? '1' : '0.5'}}
-          onClick={() => {this.toggleEmojis('FOOD_SPORTS_EMOJIS')}}>
+          onClick={() => { this.toggleEmojis('FOOD_SPORTS_EMOJIS') }}>
           🍏
         </p>
         <p
           className={theme.emojiPickerStyles.tab}
           style={{opacity: emojiCategory === 'TRAVEL_PLACES_EMOJIS' ? '1' : '0.5'}}
-          onClick={() => {this.toggleEmojis('TRAVEL_PLACES_EMOJIS')}}>
+          onClick={() => { this.toggleEmojis('TRAVEL_PLACES_EMOJIS') }}>
           🚗
         </p>
         <p
           className={theme.emojiPickerStyles.tab}
           style={{opacity: emojiCategory === 'OBJECTS_EMOJIS' ? '1' : '0.5'}}
-          onClick={() => {this.toggleEmojis('OBJECTS_EMOJIS')}}>
+          onClick={() => { this.toggleEmojis('OBJECTS_EMOJIS') }}>
           💎
         </p>
         <p
           className={theme.emojiPickerStyles.tab}
           style={{opacity: emojiCategory === 'SYMBOLS_FLAGS_EMOJIS' ? '1' : '0.5'}}
-          onClick={() => {this.toggleEmojis('SYMBOLS_FLAGS_EMOJIS')}}>
+          onClick={() => { this.toggleEmojis('SYMBOLS_FLAGS_EMOJIS') }}>
           ❤️
         </p>
       </div>
     )
   }
 
-  render() {
+  render () {
     const {emojis} = this.state
     const {theme} = this.props
     return (
@@ -120,7 +120,7 @@ export default class extends Component {
               <span
                 className={theme.emojiPickerStyles.emoji}
                 key={index}
-                onClick={() => {this.onEmojiSelect(emoji)}}>
+                onClick={() => { this.onEmojiSelect(emoji) }}>
                 {emoji}
               </span>
             ))

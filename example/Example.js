@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
-import { render } from 'react-dom'
-import Editor, { createEditorStateWithText, composeDecorators } from 'draft-js-plugins-editor'
-import { EditorState, convertFromRaw, convertToRaw, convertFromHTML, ContentState } from 'draft-js'
-
-/* Counter plugin */
-import createCounterPlugin from 'draft-js-counter-plugin'
-import 'draft-js-counter-plugin/lib/plugin.css'
-const counterPlugin = createCounterPlugin()
-const { CharCounter, WordCounter } = counterPlugin
+import { render } from 'react-dom' // eslint-disable-line no-unused-vars
+import Editor, { composeDecorators } from 'draft-js-plugins-editor'
+import { EditorState, convertFromRaw, convertToRaw } from 'draft-js'
 
 /* Emoji plugin */
 import createEmojiPlugin from 'draft-js-emoji-plugin'
@@ -30,10 +24,10 @@ import createDndPlugin from 'draft-js-dnd-plugin'
 import 'draft-js-alignment-plugin/lib/plugin.css'
 import 'draft-js-focus-plugin/lib/plugin.css'
 
-const focusPlugin = createFocusPlugin();
-const resizeablePlugin = createResizeablePlugin();
-const dndPlugin = createDndPlugin();
-const alignmentPlugin = createAlignmentPlugin();
+const focusPlugin = createFocusPlugin()
+const resizeablePlugin = createResizeablePlugin()
+const dndPlugin = createDndPlugin()
+const alignmentPlugin = createAlignmentPlugin()
 const { AlignmentTool } = alignmentPlugin
 
 const decorator = composeDecorators(
@@ -52,16 +46,9 @@ const linkifyPlugin = createLinkifyPlugin()
 /* Mentions */
 import createMentionPlugin, { defaultSuggestionsFilter } from 'draft-js-mention-plugin'
 import 'draft-js-mention-plugin/lib/plugin.css'
-import { mentions, Entry, positionSuggestions} from './Mentions'
+import {mentions, Entry, positionSuggestions} from './Mentions'
 const mentionPlugin = createMentionPlugin({ mentions, positionSuggestions })
 const { MentionSuggestions } = mentionPlugin
-
-/* Undo Redo */
-import createUndoPlugin from 'draft-js-undo-plugin'
-import 'draft-js-undo-plugin/lib/plugin.css'
-const undoPlugin = createUndoPlugin()
-const { UndoButton, RedoButton } = undoPlugin
-
 
 /* ld plugins */
 
@@ -89,8 +76,8 @@ import {colorStyleMap} from '../draft-js-color-picker-plugin/src/'
 /* init the plugins */
 const plugins = [
   dndPlugin, focusPlugin, alignmentPlugin, resizeablePlugin, imagePlugin,
-  counterPlugin, emojiPlugin, hashtagPlugin, inlineToolbarPlugin, linkifyPlugin,
-  mentionPlugin, sideToolbarPlugin, undoPlugin, embedPlugin, linkPlugin
+  emojiPlugin, hashtagPlugin, inlineToolbarPlugin, linkifyPlugin,
+  mentionPlugin, sideToolbarPlugin, embedPlugin, linkPlugin
 ]
 
 /* init the state, either from raw, html or text */
@@ -100,8 +87,7 @@ import { raw } from './initialState/raw'
 const content = convertFromRaw(raw)
 let STATE = EditorState.createWithContent(content)
 
-export default class Final extends Component {
-
+export default class Example extends Component {
   state = {
     editorState: STATE,
     suggestions: mentions
@@ -114,8 +100,8 @@ export default class Final extends Component {
     this.logState('raw state:', raw)
   }
 
-  logState(type, raw) {
-    //console.log(type)
+  logState (type, raw) {
+    // console.log(type)
     console.log(JSON.stringify(raw))
   }
 
@@ -125,16 +111,16 @@ export default class Final extends Component {
 
   onSearchChange = ({ value }) => {
     this.setState({
-      suggestions: defaultSuggestionsFilter(value, mentions),
+      suggestions: defaultSuggestionsFilter(value, mentions)
     })
   }
 
-  customCountFunction(str) {
+  customCountFunction (str) {
     const wordArray = str.match(/\S+/g)
     return wordArray ? wordArray.length : 0
   }
 
-  render() {
+  render () {
     return (
       <div>
         <div className='editor'>
@@ -143,7 +129,7 @@ export default class Final extends Component {
             onChange={this.onChange}
             plugins={plugins}
             customStyleMap={colorStyleMap}
-            ref={(element) => { this.editor = element; }}
+            ref={(element) => { this.editor = element }}
           />
           <AlignmentTool />
           <InlineToolbar />
@@ -155,18 +141,6 @@ export default class Final extends Component {
             entryComponent={Entry}
           />
         </div>
-
-        {
-          /*
-          <div className='options'>
-            <div><CharCounter limit={300} /> characters out of an allowed 300</div>
-            <div><WordCounter limit={50} /> words out of an allowed 50</div>
-
-            <UndoButton />
-            <RedoButton />
-          </div>
-          */
-        }
       </div>
     )
   }

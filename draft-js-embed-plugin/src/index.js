@@ -6,38 +6,38 @@
  * License: MIT
  */
 
-import { Entity } from 'draft-js';
-import decorateComponentWithProps from 'decorate-component-with-props';
-import addEmbed from './modifiers/addEmbed';
-import EmbedComponent from './embed';
-import embedStyles from './embedStyles.css';
+import { Entity } from 'draft-js'
+import decorateComponentWithProps from 'decorate-component-with-props'
+import addEmbed from './modifiers/addEmbed'
+import EmbedComponent from './embed'
+import embedStyles from './embedStyles.css'
 
-const defaultTheme = { embedStyles };
+const defaultTheme = { embedStyles }
 
 export default (config = {}) => {
-  const theme = config.theme ? config.theme : defaultTheme;
-  let Embed = config.EmbedComponent || EmbedComponent;
+  const theme = config.theme ? config.theme : defaultTheme
+  let Embed = config.EmbedComponent || EmbedComponent
   if (config.decorator) {
-    Embed = config.decorator(Embed);
+    Embed = config.decorator(Embed)
   }
-  const ThemedEmbed = decorateComponentWithProps(Embed, { theme });
+  const ThemedEmbed = decorateComponentWithProps(Embed, { theme })
   return {
     blockRendererFn: (block) => {
       if (block.getType() === 'atomic') {
-        const entity = Entity.get(block.getEntityAt(0));
-        const type = entity.getType();
+        const entity = Entity.get(block.getEntityAt(0))
+        const type = entity.getType()
         if (type === 'embed') {
           return {
             component: ThemedEmbed,
-            editable: false,
-          };
+            editable: false
+          }
         }
       }
 
-      return null;
+      return null
     },
-    addEmbed,
-  };
-};
+    addEmbed
+  }
+}
 
-export const Embed = EmbedComponent;
+export const Embed = EmbedComponent

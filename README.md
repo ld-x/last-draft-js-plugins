@@ -1,4 +1,4 @@
-# [Megadraft draft-js-plugins](http://lastdraft.xyz)
+# [Last Draft draft-js-plugins](http://lastdraft.xyz)
 
 [![npm version](https://badge.fury.io/js/last-draft.svg)](https://badge.fury.io/js/last-draft)
 

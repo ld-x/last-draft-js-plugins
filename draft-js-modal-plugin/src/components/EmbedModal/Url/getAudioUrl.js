@@ -1,4 +1,5 @@
 /* eslint no-useless-escape: 0 */
+/* eslint no-undef: 0 */
 
 export function audioUrlValid (str) {
   var regexp = /^https?:\/\/(soundcloud\.com|snd\.sc)\/(.*)$/

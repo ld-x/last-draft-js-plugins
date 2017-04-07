@@ -6,12 +6,12 @@ export default class extends Component {
     this.props.onSelected(color)
   }
 
-  render() {
+  render () {
     const { theme } = this.props
     return (
       <div className={theme.colorPickerStyles.wrapper}>
         <div className={theme.colorPickerStyles.closeWrapper} onClick={this.props.closeModal}>
-          <svg className={theme.colorPickerStyles.close} width='24' height='24' viewBox='0 0 24 24' className='ld-color-picker-close'>
+          <svg className={theme.colorPickerStyles.close} width='24' height='24' viewBox='0 0 24 24'>
             <g fill='currentColor' fillRule='evenodd'>
               <path d='M16.95 5.636l1.414 1.414L7.05 18.364 5.636 16.95z' />
               <path d='M16.95 18.364l1.414-1.414L7.05 5.636 5.636 7.05z' />

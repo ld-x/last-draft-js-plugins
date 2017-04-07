@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 import {
   AddImageButton,
   AddEmbedButton,
   AddGifButton,
-  AddEmojiButton,
+  AddEmojiButton
 } from '../../../../draft-js-buttons-plugin/src/'
 
-import BlockTypeSelect from '../BlockTypeSelect';
+import BlockTypeSelect from '../BlockTypeSelect'
 
 const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, openModal, closeModal }) => (
   <BlockTypeSelect
@@ -24,6 +24,6 @@ const DefaultBlockTypeSelect = ({ getEditorState, setEditorState, theme, store, 
       AddEmojiButton
     ]}
   />
-);
+)
 
-export default DefaultBlockTypeSelect;
+export default DefaultBlockTypeSelect

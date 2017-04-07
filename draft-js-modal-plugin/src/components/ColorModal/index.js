@@ -7,7 +7,7 @@ export default class extends Component {
     const editorState = this.props.getEditorState()
     const currentStyle = editorState.getCurrentInlineStyle()
     if (!currentStyle.has(color)) {
-      const safeName = color.replace('#', '');
+      const safeName = color.replace('#', '')
       this.props.setEditorState(
         RichUtils.toggleInlineStyle(editorState, `color-${safeName}`)
       )

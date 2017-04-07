@@ -1,5 +1,5 @@
-import React from 'react';
-import { getVisibleSelectionRect } from 'draft-js';
+import React from 'react'
+import { getVisibleSelectionRect } from 'draft-js'
 
 export default class Toolbar extends React.Component {
 
@@ -9,24 +9,24 @@ export default class Toolbar extends React.Component {
     modal: null
   }
 
-  componentWillMount() {
-    this.props.store.subscribeToItem('isVisible', this.onVisibilityChanged);
+  componentWillMount () {
+    this.props.store.subscribeToItem('isVisible', this.onVisibilityChanged)
   }
 
-  componentWillUnmount() {
-    this.props.store.unsubscribeFromItem('isVisible', this.onVisibilityChanged);
+  componentWillUnmount () {
+    this.props.store.unsubscribeFromItem('isVisible', this.onVisibilityChanged)
   }
 
   onVisibilityChanged = (isVisible) => {
     const toolbarHeightOffset = 55
-    const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined;
+    const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined
 
     if (selectionRect === undefined || selectionRect === null) { return }
     console.log(selectionRect)
     const top = (selectionRect.top === undefined) ? 0 : (selectionRect.top + window.scrollY) - toolbarHeightOffset
     const left = (selectionRect.left === undefined) ? 0 : selectionRect.left + window.scrollX + (selectionRect.width / 2)
     const position = { top, left }
-    this.setState({position});
+    this.setState({position})
   }
 
   openModal = (type) => {
@@ -40,8 +40,8 @@ export default class Toolbar extends React.Component {
     this.setState({ modalVisible: false })
   }
 
-  render() {
-    const { theme, store } = this.props;
+  render () {
+    const { theme, store } = this.props
     const { modal, modalVisible, position } = this.state
     let Modal = modal
     let getEditorState = store.getItem('getEditorState')
@@ -85,6 +85,6 @@ export default class Toolbar extends React.Component {
             ))
         }
       </div>
-    );
+    )
   }
 }

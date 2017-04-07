@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default class BlockTypeSelect extends React.Component {
 
@@ -6,23 +6,22 @@ export default class BlockTypeSelect extends React.Component {
     visible: false,
     style: {
       transform: 'translate(-50%) scale(0)',
-      transition: 'transform 0.15s cubic-bezier(.3,1.2,.2,1)',
+      transition: 'transform 0.15s cubic-bezier(.3,1.2,.2,1)'
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     console.log(this.props.store)
-    this.props.store.subscribeToItem('editorState', this.onEditorStateChange);
+    this.props.store.subscribeToItem('editorState', this.onEditorStateChange)
   }
 
   onEditorStateChange = (editorState) => {
-    const selection = editorState.getSelection();
     this.hide()
   }
 
   onClick = (e) => {
-    e.stopPropagation();
-    return this.state.visible ? this.hide() : this.show();
+    e.stopPropagation()
+    return this.state.visible ? this.hide() : this.show()
   }
 
   show = () => {
@@ -30,7 +29,7 @@ export default class BlockTypeSelect extends React.Component {
       visible: true,
       popupStyle: { transform: 'translate(-50%) scale(1)' },
       buttonStyle: { transform: 'rotate(45deg)', background: '#ccc' }
-    });
+    })
   }
 
   hide = () => {
@@ -38,12 +37,12 @@ export default class BlockTypeSelect extends React.Component {
       visible: false,
       popupStyle: { transform: 'translate(-50%) scale(0)' },
       buttonStyle: { transform: 'none', background: '#181818' }
-    });
+    })
   }
 
-  render() {
-    const { theme, getEditorState, setEditorState } = this.props;
-    const { popupStyle, buttonStyle } = this.state;
+  render () {
+    const { theme, getEditorState, setEditorState } = this.props
+    const { popupStyle, buttonStyle } = this.state
     return (
       <div onClick={this.onClick}>
         <div className={theme.blockTypeSelectStyles.blockType} style={buttonStyle}>
@@ -71,6 +70,6 @@ export default class BlockTypeSelect extends React.Component {
           ))}
         </div>
       </div>
-    );
+    )
   }
 }

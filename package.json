@@ -1,9 +1,10 @@
 {
   "name": "last-draft-js-plugins",
   "version": "1.0.0",
-  "description": "Megadraft draft-js-plugins",
+  "description": "Last Draft draft-js-plugins",
   "scripts": {
-    "lint": "standard 'src/**/*.js'; exit 0",
+    "lint": "standard '**/*.js'; exit 0",
+    "lint:fix": "standard --fix '**/*.js'; exit 0",
     "site": "NODE_ENV=prod webpack --config example/webpack.config.prod",
     "dev": "NODE_ENV=dev webpack-dev-server --port 3000 --inline --hot --config example/webpack.config"
   },

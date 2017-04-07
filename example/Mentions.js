@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 export const Entry = (props) => {
   const {
     mention,
     theme,
-    searchValue,
     ...parentProps
   } = props
 
@@ -15,7 +14,7 @@ export const Entry = (props) => {
           <img
             src={mention.get('avatar')}
             className={theme.mentionSuggestionsEntryAvatar}
-            role="presentation"
+            role='presentation'
           />
         </div>
 
@@ -47,10 +46,9 @@ export const positionSuggestions = ({ state, props }) => {
 
   return {
     transform,
-    transition,
+    transition
   }
 }
-
 
 import { fromJS } from 'immutable'
 
@@ -58,16 +56,16 @@ export const mentions = fromJS([
   {
     name: 'benjamin',
     title: 'Frankfurt/London',
-    avatar: 'https://avatars2.githubusercontent.com/u/4349324?v=3&s=400',
+    avatar: 'https://avatars2.githubusercontent.com/u/4349324?v=3&s=400'
   },
   {
     name: 'julian',
     title: 'United Kingdom',
-    avatar: 'https://pbs.twimg.com/profile_images/477132877763579904/m5bFc8LF_400x400.png',
+    avatar: 'https://pbs.twimg.com/profile_images/477132877763579904/m5bFc8LF_400x400.png'
   },
   {
     name: 'nik',
     title: 'Passionate about Software Architecture, UX, Skiing & Triathlons',
-    avatar: 'https://pbs.twimg.com/profile_images/535634005769457664/Ppl32NaN_400x400.jpeg',
+    avatar: 'https://pbs.twimg.com/profile_images/535634005769457664/Ppl32NaN_400x400.jpeg'
   }
 ])

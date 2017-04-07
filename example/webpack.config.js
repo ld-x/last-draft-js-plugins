@@ -1,5 +1,4 @@
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './example/index.js',
@@ -11,12 +10,12 @@ module.exports = {
       {
         test: /\.js$/,
         use: [ { loader: 'babel-loader', options: { presets: ['es2015', 'react', 'stage-0'] } } ],
-        exclude: /node_modules/,
+        exclude: /node_modules/
       }
     ]
   },
   devServer: { historyApiFallback: true },
   plugins: [
     new HtmlWebpackPlugin({ title: 'Example', template: './example/index.html' })
-  ],
+  ]
 }

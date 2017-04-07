@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 export default ({ children }, type) => (
   class embedButton extends Component {
@@ -8,10 +8,10 @@ export default ({ children }, type) => (
       this.props.openModal(type)
     }
 
-    preventBubblingUp = (event) => { event.preventDefault(); }
+    preventBubblingUp = (event) => { event.preventDefault() }
 
-    render() {
-      const { theme } = this.props;
+    render () {
+      const { theme } = this.props
       return (
         <div
           className={theme.buttonWrapper}
@@ -20,12 +20,12 @@ export default ({ children }, type) => (
           <button
             className={theme.button}
             onClick={::this.onClick}
-            type="button"
+            type='button'
             children={children}
           />
         </div>
 
-      );
+      )
     }
   }
-);
+)
