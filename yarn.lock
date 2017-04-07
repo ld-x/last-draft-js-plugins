@@ -3270,9 +3270,9 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-last-draft-js-sidebar-plugin@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.0.0.tgz#0c10f6af005a7bc67e0f4fcc3ca97c8d34c7d41b"
+last-draft-js-sidebar-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.1.0.tgz#ea1b1c6a3cfddd43303c0a9dd27ea2db24968412"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js "^0.10.0"
