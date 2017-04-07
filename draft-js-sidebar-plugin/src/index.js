@@ -50,6 +50,6 @@ export default (config = {}) => {
       store.updateItem('editorState', editorState)
       return editorState
     },
-    SideToolbar: decorateComponentWithProps(Sidebar, sidebarProps)
+    Sidebar: decorateComponentWithProps(Sidebar, sidebarProps)
   }
 }

@@ -31,7 +31,7 @@ import modalStyles from './modalStyles.css'
 import colorPickerStyles from './colorPickerStyles.css'
 import getModalByType from './components/getModalByType'
 
-const createInlineToolbarPlugin = (config = {}) => {
+const createToolbarPlugin = (config = {}) => {
   const defaultTheme = { buttonStyles, toolbarStyles, modalStyles, colorPickerStyles }
 
   const defaultaddLink = undefined
@@ -79,11 +79,11 @@ const createInlineToolbarPlugin = (config = {}) => {
       }
       return editorState
     },
-    InlineToolbar: decorateComponentWithProps(Toolbar, toolbarProps)
+    Toolbar: decorateComponentWithProps(Toolbar, toolbarProps)
   }
 }
 
-export default createInlineToolbarPlugin
+export default createToolbarPlugin
 
 export {
   Separator

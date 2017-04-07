@@ -50,23 +50,27 @@ import {mentions, Entry, positionSuggestions} from './Mentions'
 const mentionPlugin = createMentionPlugin({ mentions, positionSuggestions })
 const { MentionSuggestions } = mentionPlugin
 
+
+
 /* ld plugins */
 
-/* inline toolbar */
-import createInlineToolbarPlugin from '../draft-js-toolbar-plugin/src/'
-const inlineToolbarPlugin = createInlineToolbarPlugin()
-const { InlineToolbar } = inlineToolbarPlugin
+/* toolbar */
+import createToolbarPlugin from '../draft-js-toolbar-plugin/src/'
+const toolbarPlugin = createToolbarPlugin()
+const { Toolbar } = toolbarPlugin
 
 /* Side Toolbar */
-import createSideToolbarPlugin from '../draft-js-sidebar-plugin/src/'
-const sideToolbarPlugin = createSideToolbarPlugin()
-const { SideToolbar } = sideToolbarPlugin
+import createSidebarPlugin from '../draft-js-sidebar-plugin/src/'
+const sidebarPlugin = createSidebarPlugin()
+const { Sidebar } = sidebarPlugin
 
 /* Embed plugin */
-import createEmbedPlugin from '../draft-js-embed-plugin/src/'
+//import createEmbedPlugin from '../draft-js-embed-plugin/src/'
+import createEmbedPlugin from 'draft-js-embed-plugin'
 const embedPlugin = createEmbedPlugin()
 
 /* Link */
+//import createLinkPlugin from '../draft-js-link-plugin/src/'
 import createLinkPlugin from 'draft-js-link-plugin'
 const linkPlugin = createLinkPlugin()
 
@@ -76,8 +80,8 @@ import {colorStyleMap} from '../draft-js-color-picker-plugin/src/'
 /* init the plugins */
 const plugins = [
   dndPlugin, focusPlugin, alignmentPlugin, resizeablePlugin, imagePlugin,
-  emojiPlugin, hashtagPlugin, inlineToolbarPlugin, linkifyPlugin,
-  mentionPlugin, sideToolbarPlugin, embedPlugin, linkPlugin
+  emojiPlugin, hashtagPlugin, linkifyPlugin, mentionPlugin,
+  toolbarPlugin, sidebarPlugin, embedPlugin, linkPlugin
 ]
 
 /* init the state, either from raw, html or text */
@@ -132,8 +136,8 @@ export default class Example extends Component {
             ref={(element) => { this.editor = element }}
           />
           <AlignmentTool />
-          <InlineToolbar />
-          <SideToolbar />
+          <Toolbar />
+          <Sidebar />
           <EmojiSuggestions />
           <MentionSuggestions
             onSearchChange={this.onSearchChange}
