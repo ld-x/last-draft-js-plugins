@@ -63,28 +63,28 @@ const undoPlugin = createUndoPlugin()
 const { UndoButton, RedoButton } = undoPlugin
 
 
-/* ld-mega plugins */
+/* ld plugins */
 
 /* inline toolbar */
-import createInlineToolbarPlugin from '../mega-plugins/draft-js-mega-toolbar/src/'
+import createInlineToolbarPlugin from '../draft-js-toolbar-plugin/src/'
 const inlineToolbarPlugin = createInlineToolbarPlugin()
 const { InlineToolbar } = inlineToolbarPlugin
 
 /* Side Toolbar */
-import createSideToolbarPlugin from '../mega-plugins/draft-js-mega-sidebar/src/'
+import createSideToolbarPlugin from '../draft-js-sidebar-plugin/src/'
 const sideToolbarPlugin = createSideToolbarPlugin()
 const { SideToolbar } = sideToolbarPlugin
 
 /* Embed plugin */
-import createEmbedPlugin from '../mega-plugins/draft-js-mega-embed/src/'
+import createEmbedPlugin from '../draft-js-embed-plugin/src/'
 const embedPlugin = createEmbedPlugin()
 
 /* Link */
-import createLinkPlugin from '../mega-plugins/draft-js-mega-link/src/'
+import createLinkPlugin from '../draft-js-link-plugin/src/'
 const linkPlugin = createLinkPlugin()
 
 /* Color */
-import colorStyleMap from '../mega-plugins/draft-js-mega-color/src/'
+import {colorStyleMap} from '../draft-js-color-picker-plugin/src/'
 
 /* init the plugins */
 const plugins = [

@@ -1,5 +1,5 @@
 {
-  "name": "megadraft-js-plugins",
+  "name": "last-draft-js-plugins",
   "version": "1.0.0",
   "description": "Megadraft draft-js-plugins",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vacenz/megadraft-js-plugins.git"
+    "url": "https://github.com/vacenz/last-draft-js-plugins.git"
   },
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",

@@ -6,8 +6,7 @@
 
 ![](https://raw.githubusercontent.com/vacenz/last-draft/master/example/public/screenshot.gif)
 
-A work in progress attempt to move [last-draft](https://github.com/vacenz/last-draft) and [megadraft](https://github.com/globocom/megadraft) over to [draft-js-plugins](https://draft-js-plugins.com)
-
+Some cool [draft-js-plugins](https://draft-js-plugins.com) used in the [last draft editor](https://github.com/vacenz/last-draft)
 
 ## Development
 
