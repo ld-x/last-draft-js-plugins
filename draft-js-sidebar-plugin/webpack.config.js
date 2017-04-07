@@ -1,24 +1,24 @@
-/* eslint-disable no-var */
-var path = require('path')
-var ExtractTextPlugin = require('extract-text-webpack-plugin')
-var autoprefixer = require('autoprefixer')
+/* for extracting and copying css module prefixed styles only... */
+
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  output: {
-    publicPath: '/',
-    libraryTarget: 'commonjs2', // necessary for the babel plugin
-    path: path.join(__dirname, 'lib-css') // where to place webpack files
-  },
+  entry: './src/index.js',
+  output: { filename: './lib/bundle.js' },
   module: {
-    loaders: [
+    rules: [
+      {
+        test: /\.js$/,
+        use: [ { loader: 'babel-loader', options: { presets: ['es2015', 'react', 'stage-0'] } } ],
+        exclude: /node_modules/,
+      },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=draftJsToolbar__[local]__[hash:base64:5]!postcss-loader')
+        loader: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader?modules&importLoaders=1&localIdentName=draftJsEmbedPlugin__[local]__[hash:base64:5]!postcss-loader' })
       }
     ]
   },
-  postcss: [autoprefixer({ browsers: ['> 1%'] })],
   plugins: [
-    new ExtractTextPlugin(`${path.parse(process.argv[2]).name}.css`)
+    new ExtractTextPlugin("./lib/plugin.css"),
   ]
 }
