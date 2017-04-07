@@ -1760,7 +1760,7 @@ draft-js-alignment-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-alignment-plugin/-/draft-js-alignment-plugin-2.0.0-beta9.tgz#d4da17abb08fb9f93193ea1107eed572ef620ba0"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     draft-js-buttons "^2.0.0-beta9"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
@@ -1772,7 +1772,7 @@ draft-js-buttons@^2.0.0-beta9:
   version "2.0.0-beta9"
   resolved "https://registry.yarnpkg.com/draft-js-buttons/-/draft-js-buttons-2.0.0-beta9.tgz#1e46fc3de2a6b75a45bb13b5f7e924a1b7bd29f3"
   dependencies:
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     react ">=15.3.1"
     union-class-names "^1.0.0"
 
@@ -1781,7 +1781,7 @@ draft-js-dnd-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-dnd-plugin/-/draft-js-dnd-plugin-2.0.0-beta9.tgz#16625dde44c61d918ee7822d7a3833749ca439e3"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     react ">=15.3.1"
@@ -1793,7 +1793,7 @@ draft-js-embed-plugin@1.1.0:
   resolved "https://registry.yarnpkg.com/draft-js-embed-plugin/-/draft-js-embed-plugin-1.1.0.tgz#a9b5326a94a78a55b7c346b7d6cbe0bfc29cbac3"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     react "15.4.2"
     react-dom "15.4.2"
 
@@ -1802,7 +1802,7 @@ draft-js-emoji-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-emoji-plugin/-/draft-js-emoji-plugin-2.0.0-beta9.tgz#142d348240fee5bb4a1c11d4eeade0789c220126"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     emojione "^2.2.6"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
@@ -1816,7 +1816,7 @@ draft-js-focus-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-focus-plugin/-/draft-js-focus-plugin-2.0.0-beta9.tgz#f7aa515d4a5050906f73f72ce402d722e0dc1f93"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     react ">=15.3.1"
@@ -1828,7 +1828,7 @@ draft-js-hashtag-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-hashtag-plugin/-/draft-js-hashtag-plugin-2.0.0-beta9.tgz#ebbea7dd6bf26b92640f18018b2458b0e780e1c7"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     react ">=15.3.1"
@@ -1840,19 +1840,19 @@ draft-js-image-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-image-plugin/-/draft-js-image-plugin-2.0.0-beta9.tgz#7d5b4c35d51ef560b6b12245f9844aea72dd6585"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     react ">=15.3.1"
     react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
-draft-js-link-plugin@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/draft-js-link-plugin/-/draft-js-link-plugin-1.0.3.tgz#4cf201ca6231a3dbdffe886337d9a22253592e4a"
+draft-js-link-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/draft-js-link-plugin/-/draft-js-link-plugin-1.1.0.tgz#cf9bc42d4e684fc2d559d12bcaebd6cd850eae84"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     immutable "~3.7.4"
     linkify-it "2.0.0"
     react "15.4.2"
@@ -1864,7 +1864,7 @@ draft-js-linkify-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-linkify-plugin/-/draft-js-linkify-plugin-2.0.0-beta9.tgz#02d60aff8b21c726a23df09389a9da0d9086d015"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     immutable ">=3.8.1"
     linkify-it "2.0.0"
     react ">=15.3.1"
@@ -1877,7 +1877,7 @@ draft-js-mention-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-mention-plugin/-/draft-js-mention-plugin-2.0.0-beta9.tgz#c802e2ab3f58e666cee594958961e2c7374e2caa"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     lodash.escaperegexp "^4.1.2"
@@ -1890,7 +1890,7 @@ draft-js-plugins-editor@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-plugins-editor/-/draft-js-plugins-editor-2.0.0-beta9.tgz#9793b46c4765c205366055e1c7c566d955561a72"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     react ">=15.3.1"
@@ -1902,7 +1902,7 @@ draft-js-resizeable-plugin@^2.0.0-beta7:
   resolved "https://registry.yarnpkg.com/draft-js-resizeable-plugin/-/draft-js-resizeable-plugin-2.0.0-beta9.tgz#498af4d0a4151ac37f68fe0cd227fbc00f7ed0fd"
   dependencies:
     decorate-component-with-props "^1.0.2"
-    draft-js ">=0.9.1"
+    draft-js "^0.10.0"
     find-with-regex "^1.0.2"
     immutable ">=3.8.1"
     react ">=15.3.1"

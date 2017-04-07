@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {RichUtils} from 'draft-js'
-import {Picker} from '../../../../draft-js-color-picker-plugin/src/'
+import {Picker} from 'draft-js-color-picker-plugin'
 
 export default class extends Component {
   setColor (color) {

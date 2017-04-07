@@ -70,7 +70,7 @@ import createEmbedPlugin from 'draft-js-embed-plugin'
 import 'draft-js-embed-plugin/lib/plugin.css'
 const embedPlugin = createEmbedPlugin()
 
-/* Link */
+/* Link plugin */
 //import createLinkPlugin from '../draft-js-link-plugin/src/'
 import createLinkPlugin from 'draft-js-link-plugin'
 import 'draft-js-link-plugin/lib/plugin.css'

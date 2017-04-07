@@ -10,19 +10,28 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-decorate-component-with-props@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/decorate-component-with-props/-/decorate-component-with-props-1.0.2.tgz#5764d3cf6a58685a522201bad31bff0cb531e5fe"
-
-draft-js-buttons@^2.0.0-beta9:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-buttons/-/draft-js-buttons-2.0.0-beta9.tgz#1e46fc3de2a6b75a45bb13b5f7e924a1b7bd29f3"
+draft-js-color-picker-plugin@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.0.0.tgz#7b82320ce929a504199fe22a954404c077b54cfc"
   dependencies:
-    draft-js "^0.10.0"
     react "15.4.2"
-    union-class-names "^1.0.0"
+    react-dom "15.4.2"
 
-draft-js@>=0.8.1, draft-js@>=0.9.1:
+draft-js-emoji-picker-plugin@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.0.0.tgz#946f4a987a82277e906e43bed4b6a6692f7ee822"
+  dependencies:
+    react "15.4.2"
+    react-dom "15.4.2"
+
+draft-js-gif-picker-plugin@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.0.0.tgz#e923544f9adbbd144e2d69473718cd639d5491ba"
+  dependencies:
+    react "15.4.2"
+    react-dom "15.4.2"
+
+draft-js@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.0.tgz#29d16191012b932fdab28a9b37ec1538f421abf6"
   dependencies:
@@ -37,8 +46,8 @@ encoding@^0.1.11:
     iconv-lite "~0.4.13"
 
 fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.7:
-  version "0.8.10"
-  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.10.tgz#d295265ca20982aec200d91d759b67fb1818699c"
+  version "0.8.12"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.12.tgz#10b5d92f76d45575fd63a217d4ea02bea2f8ed04"
   dependencies:
     core-js "^1.0.0"
     isomorphic-fetch "^2.1.1"
@@ -47,10 +56,6 @@ fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.7:
     promise "^7.1.1"
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
-
-find-with-regex@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/find-with-regex/-/find-with-regex-1.0.2.tgz#d3b36286539f14c527e31f194159c6d251651a45"
 
 iconv-lite@~0.4.13:
   version "0.4.15"
@@ -98,7 +103,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-react-dom@>=15.2.1:
+react-dom@15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.4.2.tgz#015363f05b0a1fd52ae9efdd3a0060d90695208f"
   dependencies:
@@ -106,7 +111,7 @@ react-dom@>=15.2.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
-react@>=15.2.1, react@15.4.2:
+react@15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.2.tgz#41f7991b26185392ba9bae96c8889e7e018397ef"
   dependencies:
@@ -121,10 +126,6 @@ setimmediate@^1.0.5:
 ua-parser-js@^0.7.9:
   version "0.7.12"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
-
-union-class-names@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/union-class-names/-/union-class-names-1.0.0.tgz#9259608adacc39094a2b0cfe16c78e6200617847"
 
 whatwg-fetch@>=0.10.0:
   version "2.0.3"
