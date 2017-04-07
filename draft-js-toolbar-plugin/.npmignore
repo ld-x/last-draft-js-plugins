@@ -1,0 +1,13 @@
+# Dependency directory
+node_modules
+
+# sources
+/src/
+webpack.config.js
+.babelrc
+.gitignore
+README.md
+CHANGELOG.md
+
+# NPM debug
+npm-debug.log

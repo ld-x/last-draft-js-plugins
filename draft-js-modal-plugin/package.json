@@ -30,7 +30,7 @@
   "dependencies": {
     "draft-js": "^0.10.0",
     "draft-js-emoji-picker-plugin": "1.0.0",
-    "draft-js-color-picker-plugin": "1.0.1",
+    "draft-js-color-picker-plugin": "1.1.0",
     "draft-js-gif-picker-plugin": "1.0.0",
     "react": "15.4.2",
     "react-dom": "15.4.2"
