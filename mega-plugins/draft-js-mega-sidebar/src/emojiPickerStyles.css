@@ -5,7 +5,7 @@
   border-radius: 2px;
   background-color: inherit;
   box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.3);
-  width: 340px;
+  width: 370px;
   min-height: 360px;
   z-index: 100;
   margin-top: -3rem;
@@ -40,6 +40,7 @@
 }
 
 .tab {
+  font-size: 1.5rem;
   padding-left: 0.35rem;
   padding: 0.8rem;
   margin: 0;
