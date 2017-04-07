@@ -73,6 +73,7 @@ const embedPlugin = createEmbedPlugin()
 /* Link */
 //import createLinkPlugin from '../draft-js-link-plugin/src/'
 import createLinkPlugin from 'draft-js-link-plugin'
+import 'draft-js-link-plugin/lib/plugin.css'
 const linkPlugin = createLinkPlugin()
 
 /* Color */
