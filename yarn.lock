@@ -1755,17 +1755,15 @@ domutils@1.5.1, domutils@^1.5.1:
     dom-serializer "0"
     domelementtype "1"
 
-draft-js-alignment-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-alignment-plugin/-/draft-js-alignment-plugin-2.0.0-beta9.tgz#d4da17abb08fb9f93193ea1107eed572ef620ba0"
+draft-js-alignment-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-alignment-plugin/-/draft-js-alignment-plugin-2.0.0-beta10.tgz#9f130fa9ee4e2ebd613e1ed0cdb08c129142f034"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
-    draft-js-buttons "^2.0.0-beta9"
+    draft-js-buttons "^2.0.0-beta10"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
+    immutable "~3.7.4"
     union-class-names "^1.0.0"
 
 draft-js-buttons-plugin@1.0.0:
@@ -1776,7 +1774,7 @@ draft-js-buttons-plugin@1.0.0:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-buttons@^2.0.0-beta9:
+draft-js-buttons@^2.0.0-beta10, draft-js-buttons@^2.0.0-beta9:
   version "2.0.0-beta9"
   resolved "https://registry.yarnpkg.com/draft-js-buttons/-/draft-js-buttons-2.0.0-beta9.tgz#1e46fc3de2a6b75a45bb13b5f7e924a1b7bd29f3"
   dependencies:
@@ -1791,7 +1789,7 @@ draft-js-color-picker-plugin@1.1.0:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-dnd-plugin@^2.0.0-beta7:
+draft-js-dnd-plugin@2.0.0-beta9:
   version "2.0.0-beta9"
   resolved "https://registry.yarnpkg.com/draft-js-dnd-plugin/-/draft-js-dnd-plugin-2.0.0-beta9.tgz#16625dde44c61d918ee7822d7a3833749ca439e3"
   dependencies:
@@ -1819,30 +1817,26 @@ draft-js-emoji-picker-plugin@1.1.0:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-emoji-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-emoji-plugin/-/draft-js-emoji-plugin-2.0.0-beta9.tgz#142d348240fee5bb4a1c11d4eeade0789c220126"
+draft-js-emoji-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-emoji-plugin/-/draft-js-emoji-plugin-2.0.0-beta10.tgz#5c2aa93d5fcd359fcd9cf623615685e4a8dd91f4"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     emojione "^2.2.6"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
+    immutable "~3.7.4"
     lodash.keys "^4.2.0"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
-draft-js-focus-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-focus-plugin/-/draft-js-focus-plugin-2.0.0-beta9.tgz#f7aa515d4a5050906f73f72ce402d722e0dc1f93"
+draft-js-focus-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-focus-plugin/-/draft-js-focus-plugin-2.0.0-beta10.tgz#b9b3938ab8c0d11dc469c99b467df5d928b22304"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
+    immutable "~3.7.4"
     union-class-names "^1.0.0"
 
 draft-js-gif-picker-plugin@1.1.0:
@@ -1852,28 +1846,24 @@ draft-js-gif-picker-plugin@1.1.0:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-hashtag-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-hashtag-plugin/-/draft-js-hashtag-plugin-2.0.0-beta9.tgz#ebbea7dd6bf26b92640f18018b2458b0e780e1c7"
+draft-js-hashtag-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-hashtag-plugin/-/draft-js-hashtag-plugin-2.0.0-beta10.tgz#b9276d4ec5be994b4c030ce9fd3355ecc0eb1726"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
+    immutable "~3.7.4"
     union-class-names "^1.0.0"
 
-draft-js-image-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-image-plugin/-/draft-js-image-plugin-2.0.0-beta9.tgz#7d5b4c35d51ef560b6b12245f9844aea72dd6585"
+draft-js-image-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-image-plugin/-/draft-js-image-plugin-2.0.0-beta10.tgz#42856d0ea2b6146236e63e123ebf7649f6bffffb"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
+    immutable "~3.7.4"
     union-class-names "^1.0.0"
 
 draft-js-link-plugin@1.1.0:
@@ -1888,30 +1878,26 @@ draft-js-link-plugin@1.1.0:
     react-dom "15.4.2"
     tlds "1.159.0"
 
-draft-js-linkify-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-linkify-plugin/-/draft-js-linkify-plugin-2.0.0-beta9.tgz#02d60aff8b21c726a23df09389a9da0d9086d015"
+draft-js-linkify-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-linkify-plugin/-/draft-js-linkify-plugin-2.0.0-beta10.tgz#c73216007b250e1609c8be64d51f98c0bc3eee17"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
-    immutable ">=3.8.1"
+    immutable "~3.7.4"
     linkify-it "2.0.0"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
     tlds "1.159.0"
     union-class-names "^1.0.0"
 
-draft-js-mention-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-mention-plugin/-/draft-js-mention-plugin-2.0.0-beta9.tgz#c802e2ab3f58e666cee594958961e2c7374e2caa"
+draft-js-mention-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-mention-plugin/-/draft-js-mention-plugin-2.0.0-beta10.tgz#f70869010fb996485fe3439890a0970f734c6e0c"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
+    immutable "~3.7.4"
     lodash.escaperegexp "^4.1.2"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
     union-class-names "^1.0.0"
 
 draft-js-modal-plugin@1.0.1:
@@ -1925,28 +1911,24 @@ draft-js-modal-plugin@1.0.1:
     react "15.4.2"
     react-dom "15.4.2"
 
-draft-js-plugins-editor@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-plugins-editor/-/draft-js-plugins-editor-2.0.0-beta9.tgz#9793b46c4765c205366055e1c7c566d955561a72"
+draft-js-plugins-editor@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-plugins-editor/-/draft-js-plugins-editor-2.0.0-beta10.tgz#d8f84199186a651b603e13328dda90d2f800d5ef"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
+    immutable "~3.7.4"
     union-class-names "^1.0.0"
 
-draft-js-resizeable-plugin@^2.0.0-beta7:
-  version "2.0.0-beta9"
-  resolved "https://registry.yarnpkg.com/draft-js-resizeable-plugin/-/draft-js-resizeable-plugin-2.0.0-beta9.tgz#498af4d0a4151ac37f68fe0cd227fbc00f7ed0fd"
+draft-js-resizeable-plugin@2.0.0-beta10:
+  version "2.0.0-beta10"
+  resolved "https://registry.yarnpkg.com/draft-js-resizeable-plugin/-/draft-js-resizeable-plugin-2.0.0-beta10.tgz#4b01f26e27b14a65d134f7a73ab5626764829692"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js ">=0.9.1"
     find-with-regex "^1.0.2"
-    immutable ">=3.8.1"
-    react ">=15.3.1"
-    react-dom ">=15.3.1"
+    immutable "~3.7.4"
     union-class-names "^1.0.0"
 
 draft-js@>=0.9.1, draft-js@^0.10.0:

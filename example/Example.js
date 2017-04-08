@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { render } from 'react-dom' // eslint-disable-line no-unused-vars
 import Editor, { composeDecorators } from 'draft-js-plugins-editor'
 import { EditorState, convertFromRaw, convertToRaw } from 'draft-js'
+import { fromJS } from 'immutable';
 
 /* Emoji plugin */
 import createEmojiPlugin from 'draft-js-emoji-plugin'
@@ -44,12 +45,12 @@ import 'draft-js-linkify-plugin/lib/plugin.css'
 const linkifyPlugin = createLinkifyPlugin()
 
 /* Mentions */
-import createMentionPlugin, { defaultSuggestionsFilter } from 'draft-js-mention-plugin'
-import 'draft-js-mention-plugin/lib/plugin.css'
-import {mentions, Entry, positionSuggestions} from './Mentions'
-const mentionPlugin = createMentionPlugin({ mentions, positionSuggestions })
-const { MentionSuggestions } = mentionPlugin
 
+import createMentionPlugin, { defaultSuggestionsFilter } from 'draft-js-mention-plugin'
+const mentionPlugin = createMentionPlugin();
+const { MentionSuggestions } = mentionPlugin;
+import mentions from './Mentions';
+import 'draft-js-mention-plugin/lib/plugin.css'
 
 /* ld plugins */
 
@@ -116,13 +117,11 @@ export default class Example extends Component {
 
   onSearchChange = ({ value }) => {
     this.setState({
-      suggestions: defaultSuggestionsFilter(value, mentions)
-    })
-  }
+      suggestions: defaultSuggestionsFilter(value, mentions),
+    });
+  };
 
-  customCountFunction (str) {
-    const wordArray = str.match(/\S+/g)
-    return wordArray ? wordArray.length : 0
+  onAddMention = () => {
   }
 
   render () {
@@ -143,7 +142,8 @@ export default class Example extends Component {
           <MentionSuggestions
             onSearchChange={this.onSearchChange}
             suggestions={this.state.suggestions}
-            entryComponent={Entry}
+            onAddMention={this.onAddMention}
+            onClose={() => this.setState({suggestions: fromJS([])})}
           />
         </div>
       </div>
