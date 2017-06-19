@@ -1778,9 +1778,9 @@ draft-js-alignment-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-buttons-plugin@1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.6.tgz#db2e46b7f609ee98944e61baab8f70412b71fe81"
+draft-js-buttons-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.2.0.tgz#fc0a5391c1dd609a02e999ea88ee8d1026053867"
 
 draft-js-buttons@^2.0.0-rc2:
   version "2.0.0-rc2"
@@ -1788,9 +1788,9 @@ draft-js-buttons@^2.0.0-rc2:
   dependencies:
     union-class-names "^1.0.0"
 
-draft-js-color-picker-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.1.4.tgz#94309c2126f13f57544d7402a71cfb418aed4a56"
+draft-js-color-picker-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.2.0.tgz#f46dffb2e1df787accb35066c9e31c6a191d88fe"
 
 draft-js-drag-n-drop-plugin@2.0.0-rc2:
   version "2.0.0-rc2"
@@ -1802,15 +1802,15 @@ draft-js-drag-n-drop-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-embed-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-embed-plugin/-/draft-js-embed-plugin-1.1.4.tgz#b5544d609f8b1e9fab8442ec911ca5d0863b8af5"
+draft-js-embed-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-embed-plugin/-/draft-js-embed-plugin-1.2.0.tgz#cf41c6de58ce58c3662d8cd3d45325733587d3d1"
   dependencies:
     decorate-component-with-props "^1.0.2"
 
-draft-js-emoji-picker-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.1.4.tgz#d68bac7e99e689c60db60db45d3af9762be68786"
+draft-js-emoji-picker-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.2.0.tgz#c5fe3b1ddcfed9218c4fffec576d6e4b95fda4c4"
 
 draft-js-emoji-plugin@2.0.0-rc2:
   version "2.0.0-rc2"
@@ -1837,9 +1837,9 @@ draft-js-focus-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-gif-picker-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.1.4.tgz#15f381f6f9349d75f1bf54f4bab43bd5bc6a938e"
+draft-js-gif-picker-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.2.0.tgz#fba8502840c6f5d2aadf45ba76e9e9da8824c064"
 
 draft-js-hashtag-plugin@2.0.0-rc2:
   version "2.0.0-rc2"
@@ -1861,9 +1861,9 @@ draft-js-image-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-link-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-link-plugin/-/draft-js-link-plugin-1.1.4.tgz#f1580c27ca5ccd4133b7add7899a568444398b53"
+draft-js-link-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-link-plugin/-/draft-js-link-plugin-1.2.0.tgz#a32c5d0617e2bfb4ec3b1c656c1855594b9dc248"
   dependencies:
     decorate-component-with-props "^1.0.2"
     linkify-it "2.0.0"
@@ -1891,13 +1891,13 @@ draft-js-mention-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-modal-plugin@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/draft-js-modal-plugin/-/draft-js-modal-plugin-1.0.4.tgz#fe28786e6679dc1bd3a4bec4942660f6c056f5ea"
+draft-js-modal-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-modal-plugin/-/draft-js-modal-plugin-1.2.0.tgz#d4c0bcae45037eb9809c5d37958c9945014edc0c"
   dependencies:
-    draft-js-color-picker-plugin "1.1.4"
-    draft-js-emoji-picker-plugin "1.1.4"
-    draft-js-gif-picker-plugin "1.1.4"
+    draft-js-color-picker-plugin "1.2.0"
+    draft-js-emoji-picker-plugin "1.2.0"
+    draft-js-gif-picker-plugin "1.2.0"
 
 draft-js-plugins-editor@2.0.0-rc2:
   version "2.0.0-rc2"
@@ -3236,25 +3236,25 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-last-draft-js-sidebar-plugin@1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.1.6.tgz#a8d38ee1ec0579bdea71ac9240216f8256b2c89e"
+last-draft-js-sidebar-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.2.0.tgz#29775428c3b8b70dbe37d215824777636cbdd32e"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"
-    draft-js-buttons-plugin "1.0.6"
-    draft-js-modal-plugin "1.0.4"
+    draft-js-buttons-plugin "1.2.0"
+    draft-js-modal-plugin "1.2.0"
     immutable "3.7.4"
     union-class-names "^1.0.0"
 
-last-draft-js-toolbar-plugin@1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.7.tgz#4809299a89ec75e345f19f550441eb3322e7a3b8"
+last-draft-js-toolbar-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.2.0.tgz#bdb7c59ef1c06b7c5cefaf1714fb5f42a8a4e33c"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"
-    draft-js-buttons-plugin "1.0.6"
-    draft-js-modal-plugin "1.0.4"
+    draft-js-buttons-plugin "1.2.0"
+    draft-js-modal-plugin "1.2.0"
     union-class-names "^1.0.0"
 
 lazy-cache@^1.0.3:
