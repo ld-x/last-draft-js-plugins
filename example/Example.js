@@ -77,7 +77,7 @@ import 'draft-js-link-plugin/lib/plugin.css'
 const linkPlugin = createLinkPlugin()
 
 /* Color */
-import {colorStyleMap} from '../draft-js-color-picker-plugin/src/'
+import {colorStyleMap} from 'draft-js-color-picker-plugin'
 
 /* init the plugins */
 const plugins = [
