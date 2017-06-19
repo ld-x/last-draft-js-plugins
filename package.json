@@ -1,6 +1,6 @@
 {
   "name": "last-draft-js-plugins",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Last Draft draft-js-plugins",
   "scripts": {
     "lint": "standard '**/*.js'; exit 0",
