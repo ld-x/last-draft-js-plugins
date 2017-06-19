@@ -1,6 +1,6 @@
 {
   "name": "draft-js-buttons-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "LastDraft buttons for DraftJS",
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
