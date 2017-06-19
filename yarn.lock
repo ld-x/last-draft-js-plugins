@@ -1778,9 +1778,9 @@ draft-js-alignment-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-buttons-plugin@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.4.tgz#4c791a092101e9ca45152e02df87853e4dc5c3b7"
+draft-js-buttons-plugin@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.5.tgz#60731a2bca74dfcec14a2e70381650d83247ff58"
 
 draft-js-buttons@^2.0.0-rc2:
   version "2.0.0-rc2"
@@ -2812,13 +2812,9 @@ ignore@^3.0.9, ignore@^3.2.0:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.2.7.tgz#4810ca5f1d8eca5595213a34b94f2eb4ed926bbd"
 
-immutable@3.7.4:
+immutable@3.7.4, immutable@~3.7.4:
   version "3.7.4"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.7.4.tgz#40ab3ec87b4ac95e0331a6d359a4b1fa73b2ddf3"
-
-immutable@~3.7.4:
-  version "3.7.6"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -3240,24 +3236,24 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-last-draft-js-sidebar-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.1.4.tgz#47a1747ed76456a1bc0cab16c2615b7ff06afe4e"
+last-draft-js-sidebar-plugin@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.1.5.tgz#a51023afb9ce585668dc4275708450f2e0e63a7b"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"
-    draft-js-buttons-plugin "1.0.4"
+    draft-js-buttons-plugin "1.0.5"
     draft-js-modal-plugin "1.0.4"
     immutable "3.7.4"
     union-class-names "^1.0.0"
 
-last-draft-js-toolbar-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.4.tgz#75af4d2e623ef1fa953bab83cf1a46970b90edcd"
+last-draft-js-toolbar-plugin@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.5.tgz#e84b0578006788ad8d8b9527c77429b25d575177"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"
-    draft-js-buttons-plugin "1.0.4"
+    draft-js-buttons-plugin "1.0.5"
     draft-js-modal-plugin "1.0.4"
     union-class-names "^1.0.0"
 
