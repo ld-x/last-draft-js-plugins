@@ -27,14 +27,19 @@
     "build": "BABEL_ENV=production ../node_modules/.bin/babel --out-dir='lib' src"
   },
   "license": "MIT",
+  "devDependencies": {
+    "draft-js": "0.10.1",
+    "react": "15.5.0",
+    "react-dom": "15.5.0"
+  },
   "peerDependencies": {
     "draft-js": "0.10.1",
     "react": "15.5.0",
     "react-dom": "15.5.0"
   },
   "dependencies": {
-    "draft-js-emoji-picker-plugin": "1.1.1",
-    "draft-js-color-picker-plugin": "1.1.1",
-    "draft-js-gif-picker-plugin": "1.1.1"
+    "draft-js-emoji-picker-plugin": "1.1.4",
+    "draft-js-color-picker-plugin": "1.1.4",
+    "draft-js-gif-picker-plugin": "1.1.4"
   }
 }
