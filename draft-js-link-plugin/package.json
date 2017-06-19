@@ -1,6 +1,6 @@
 {
   "name": "draft-js-link-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "LastDraft Link Plugin for DraftJS",
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
