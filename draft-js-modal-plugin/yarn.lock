@@ -10,17 +10,17 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-draft-js-color-picker-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.1.4.tgz#94309c2126f13f57544d7402a71cfb418aed4a56"
+draft-js-color-picker-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-color-picker-plugin/-/draft-js-color-picker-plugin-1.2.0.tgz#f46dffb2e1df787accb35066c9e31c6a191d88fe"
 
-draft-js-emoji-picker-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.1.4.tgz#d68bac7e99e689c60db60db45d3af9762be68786"
+draft-js-emoji-picker-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-emoji-picker-plugin/-/draft-js-emoji-picker-plugin-1.2.0.tgz#c5fe3b1ddcfed9218c4fffec576d6e4b95fda4c4"
 
-draft-js-gif-picker-plugin@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.1.4.tgz#15f381f6f9349d75f1bf54f4bab43bd5bc6a938e"
+draft-js-gif-picker-plugin@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/draft-js-gif-picker-plugin/-/draft-js-gif-picker-plugin-1.2.0.tgz#fba8502840c6f5d2aadf45ba76e9e9da8824c064"
 
 draft-js@0.10.1:
   version "0.10.1"

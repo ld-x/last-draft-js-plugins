@@ -1778,9 +1778,9 @@ draft-js-alignment-plugin@2.0.0-rc2:
     prop-types "^15.5.8"
     union-class-names "^1.0.0"
 
-draft-js-buttons-plugin@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.5.tgz#60731a2bca74dfcec14a2e70381650d83247ff58"
+draft-js-buttons-plugin@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.6.tgz#db2e46b7f609ee98944e61baab8f70412b71fe81"
 
 draft-js-buttons@^2.0.0-rc2:
   version "2.0.0-rc2"
@@ -3236,24 +3236,24 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-last-draft-js-sidebar-plugin@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.1.5.tgz#a51023afb9ce585668dc4275708450f2e0e63a7b"
+last-draft-js-sidebar-plugin@1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/last-draft-js-sidebar-plugin/-/last-draft-js-sidebar-plugin-1.1.6.tgz#a8d38ee1ec0579bdea71ac9240216f8256b2c89e"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"
-    draft-js-buttons-plugin "1.0.5"
+    draft-js-buttons-plugin "1.0.6"
     draft-js-modal-plugin "1.0.4"
     immutable "3.7.4"
     union-class-names "^1.0.0"
 
-last-draft-js-toolbar-plugin@1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.6.tgz#4be4edc5b64a512000db0494d4ddacfb6bc6e8f5"
+last-draft-js-toolbar-plugin@1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.7.tgz#4809299a89ec75e345f19f550441eb3322e7a3b8"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"
-    draft-js-buttons-plugin "1.0.5"
+    draft-js-buttons-plugin "1.0.6"
     draft-js-modal-plugin "1.0.4"
     union-class-names "^1.0.0"
 

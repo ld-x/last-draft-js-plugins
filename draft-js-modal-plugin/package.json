@@ -38,8 +38,8 @@
     "react-dom": "15.5.0"
   },
   "dependencies": {
-    "draft-js-emoji-picker-plugin": "1.1.4",
-    "draft-js-color-picker-plugin": "1.1.4",
-    "draft-js-gif-picker-plugin": "1.1.4"
+    "draft-js-emoji-picker-plugin": "1.2.0",
+    "draft-js-color-picker-plugin": "1.2.0",
+    "draft-js-gif-picker-plugin": "1.2.0"
   }
 }
