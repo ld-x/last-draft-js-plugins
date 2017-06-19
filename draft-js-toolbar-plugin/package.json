@@ -60,8 +60,8 @@
   "dependencies": {
     "decorate-component-with-props": "^1.0.2",
     "draft-js-buttons": "^2.0.0-rc2",
-    "draft-js-buttons-plugin": "1.0.6",
-    "draft-js-modal-plugin": "1.0.4",
+    "draft-js-buttons-plugin": "1.2.0",
+    "draft-js-modal-plugin": "1.2.0",
     "union-class-names": "^1.0.0"
   }
 }
