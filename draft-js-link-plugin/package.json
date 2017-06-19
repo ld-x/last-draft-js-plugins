@@ -49,13 +49,14 @@
     "style-loader": "^0.13.2",
     "webpack": "^2.2.1"
   },
+  "peerDependencies": {
+    "draft-js": "0.10.1",
+    "react": "15.5.0",
+    "react-dom": "15.5.0"
+  },
   "dependencies": {
     "decorate-component-with-props": "^1.0.2",
     "linkify-it": "2.0.0",
-    "tlds": "1.159.0",
-    "draft-js": "^0.10.0",
-    "immutable": "~3.7.4",
-    "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "tlds": "1.159.0"
   }
 }
