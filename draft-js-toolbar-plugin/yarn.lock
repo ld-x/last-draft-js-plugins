@@ -1427,9 +1427,9 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-draft-js-buttons-plugin@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.4.tgz#4c791a092101e9ca45152e02df87853e4dc5c3b7"
+draft-js-buttons-plugin@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/draft-js-buttons-plugin/-/draft-js-buttons-plugin-1.0.5.tgz#60731a2bca74dfcec14a2e70381650d83247ff58"
 
 draft-js-buttons@^2.0.0-rc2:
   version "2.0.0-rc2"
