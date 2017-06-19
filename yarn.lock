@@ -3247,9 +3247,9 @@ last-draft-js-sidebar-plugin@1.1.5:
     immutable "3.7.4"
     union-class-names "^1.0.0"
 
-last-draft-js-toolbar-plugin@1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.5.tgz#e84b0578006788ad8d8b9527c77429b25d575177"
+last-draft-js-toolbar-plugin@1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/last-draft-js-toolbar-plugin/-/last-draft-js-toolbar-plugin-1.1.6.tgz#4be4edc5b64a512000db0494d4ddacfb6bc6e8f5"
   dependencies:
     decorate-component-with-props "^1.0.2"
     draft-js-buttons "^2.0.0-rc2"

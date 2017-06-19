@@ -24,8 +24,7 @@
     "react-component"
   ],
   "scripts": {
-    "build": "npm run build:js",
-    "build:js": "BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ../node_modules/.bin/babel --out-dir='lib' src"
+    "build": "BABEL_ENV=production ../node_modules/.bin/babel --out-dir='lib' src"
   },
   "license": "MIT",
   "devDependencies": {
