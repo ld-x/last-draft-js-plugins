@@ -1,6 +1,6 @@
 {
   "name": "draft-js-color-picker-plugin",
-  "version": "1.1.0",
+  "version": "1.1.4",
   "description": "LastDraft Color picker Plugin for DraftJS",
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
@@ -28,6 +28,11 @@
     "build:js": "BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ../node_modules/.bin/babel --out-dir='lib' src"
   },
   "license": "MIT",
+  "devDependencies": {
+    "draft-js": "0.10.1",
+    "react": "15.5.0",
+    "react-dom": "15.5.0"
+  },
   "peerDependencies": {
     "draft-js": "0.10.1",
     "react": "15.5.0",
