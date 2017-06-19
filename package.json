@@ -44,7 +44,7 @@
     "last-draft-js-sidebar-plugin": "1.1.4",
     "last-draft-js-toolbar-plugin": "1.1.4",
     "draft-js-alignment-plugin": "2.0.0-rc2",
-    "draft-js-dnd-plugin": "2.0.0-rc2",
+    "draft-js-drag-n-drop-plugin": "2.0.0-rc2",
     "draft-js-emoji-plugin": "2.0.0-rc2",
     "draft-js-focus-plugin": "2.0.0-rc2",
     "draft-js-hashtag-plugin": "2.0.0-rc2",
