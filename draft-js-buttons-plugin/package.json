@@ -1,6 +1,6 @@
 {
   "name": "draft-js-buttons-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LastDraft buttons for DraftJS",
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
@@ -24,8 +24,8 @@
     "react-component"
   ],
   "scripts": {
-    "build": "BABEL_ENV=production ../node_modules/.bin/babel --out-dir='lib' src",
-    "prepublish": "npm run build"
+    "build": "npm run build:js",
+    "build:js": "BABEL_DISABLE_CACHE=1 BABEL_ENV=production NODE_ENV=production ../node_modules/.bin/babel --out-dir='lib' src"
   },
   "license": "MIT",
   "peerDependencies": {
