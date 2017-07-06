@@ -1,4 +1,4 @@
 .wrapper {
-  position: absolute;
+  position: fixed;
   z-index: 3;
 }
