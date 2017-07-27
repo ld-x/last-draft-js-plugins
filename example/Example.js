@@ -20,7 +20,7 @@ import createImagePlugin from 'draft-js-image-plugin'
 import createAlignmentPlugin from 'draft-js-alignment-plugin'
 import createFocusPlugin from 'draft-js-focus-plugin'
 import createResizeablePlugin from 'draft-js-resizeable-plugin'
-import createDndPlugin from 'draft-js-dnd-plugin'
+import createDndPlugin from 'draft-js-drag-n-drop-plugin'
 
 import 'draft-js-alignment-plugin/lib/plugin.css'
 import 'draft-js-focus-plugin/lib/plugin.css'
@@ -77,7 +77,7 @@ import 'draft-js-link-plugin/lib/plugin.css'
 const linkPlugin = createLinkPlugin()
 
 /* Color */
-import {colorStyleMap} from '../draft-js-color-picker-plugin/src/'
+import {colorStyleMap} from 'draft-js-color-picker-plugin'
 
 /* init the plugins */
 const plugins = [

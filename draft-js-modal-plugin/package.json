@@ -1,6 +1,6 @@
 {
   "name": "draft-js-modal-plugin",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "LastDraft modals for DraftJS",
   "authors": [
     "Benjamin Kniffler <benjamin@kniffler.com> (https://github.com/bkniffler)",
@@ -27,12 +27,19 @@
     "build": "BABEL_ENV=production ../node_modules/.bin/babel --out-dir='lib' src"
   },
   "license": "MIT",
+  "devDependencies": {
+    "draft-js": "0.10.1",
+    "react": "15.5.0",
+    "react-dom": "15.5.0"
+  },
+  "peerDependencies": {
+    "draft-js": "0.10.1",
+    "react": "15.5.0",
+    "react-dom": "15.5.0"
+  },
   "dependencies": {
-    "draft-js": "^0.10.0",
-    "draft-js-emoji-picker-plugin": "1.1.0",
-    "draft-js-color-picker-plugin": "1.1.0",
-    "draft-js-gif-picker-plugin": "1.1.0",
-    "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "draft-js-emoji-picker-plugin": "1.2.0",
+    "draft-js-color-picker-plugin": "1.2.0",
+    "draft-js-gif-picker-plugin": "1.2.0"
   }
 }

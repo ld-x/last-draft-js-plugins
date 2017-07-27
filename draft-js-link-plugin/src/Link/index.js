@@ -24,7 +24,9 @@ export default class Link extends Component {
     } = this.props
 
     const combinedClassName = unionClassNames(theme.link, className)
-    const links = linkify.match(decoratedText)
+    const contentState = this.props.contentState
+    const entity = contentState.getEntity(this.props.entityKey).getData()
+    const links = linkify.match(entity.url)
     const href = links && links[0] ? links[0].url : ''
 
     const props = {
