@@ -40,6 +40,19 @@ class Link extends Component {
 
   componentDidMount () {
     ReactDOM.findDOMNode(this.refs.textInput).focus()
+    this.props.store.subscribeToItem('editorState', this.onEditorStateChange)
+  }
+
+  componentWillUnmount() {
+    this.props.store.unsubscribeFromItem(
+      'editorState',
+      this.onEditorStateChange,
+    )
+  }
+
+  onEditorStateChange (editorState) {
+    console.log('onEditorStateChanged ')
+    this.props.closeModal()
   }
 
   onUrlChange (event) {
