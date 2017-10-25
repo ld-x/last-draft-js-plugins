@@ -14,6 +14,6 @@ export default (editorState, url) => {
   )
   return EditorState.forceSelection(
     newEditorState,
-    editorState.getCurrentContent().getSelectionAfter()
+    newEditorState.getCurrentContent().getSelectionAfter()
   )
 }
