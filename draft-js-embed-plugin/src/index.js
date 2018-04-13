@@ -6,6 +6,7 @@
  * License: MIT
  */
 
+import { Entity } from 'draft-js'
 import decorateComponentWithProps from 'decorate-component-with-props'
 import addEmbed from './modifiers/addEmbed'
 import EmbedComponent from './embed'
@@ -21,14 +22,10 @@ export default (config = {}) => {
   }
   const ThemedEmbed = decorateComponentWithProps(Embed, { theme })
   return {
-    blockRendererFn: (block, { getEditorState }) => {
+    blockRendererFn: (block) => {
       if (block.getType() === 'atomic') {
-        const contentState = getEditorState().getCurrentContent()
-        const entity = block.getEntityAt(0)
-        if (entity) {
-          return null
-        }
-        const type = contentState.getEntity(entity).getType()
+        const entity = Entity.get(block.getEntityAt(0))
+        const type = entity.getType()
         if (type === 'embed') {
           return {
             component: ThemedEmbed,

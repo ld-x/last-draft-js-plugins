@@ -1,3 +1,4 @@
+import { Entity } from 'draft-js'
 import React, { Component } from 'react'
 
 export default class Embed extends Component {
@@ -17,11 +18,9 @@ export default class Embed extends Component {
       offsetKey, // eslint-disable-line no-unused-vars
       selection, // eslint-disable-line no-unused-vars
       tree, // eslint-disable-line no-unused-vars
-      contentState,
       ...elementProps
     } = otherProps
-    const entity = block.getEntityAt(0);
-    const { src } = contentState.getEntity(entity).getData();
+    const { src } = Entity.get(block.getEntityAt(0)).getData()
     return (
       <div className={theme.embedStyles.embedWrapper}>
         <iframe
