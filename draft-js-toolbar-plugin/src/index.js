@@ -77,6 +77,7 @@ const createToolbarPlugin = (config = {}) => {
       } else {
         store.updateItem('isVisible', false)
       }
+      store.updateItem('editorState', editorState)
       return editorState
     },
     Toolbar: decorateComponentWithProps(Toolbar, toolbarProps)
